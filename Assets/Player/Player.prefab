@@ -72,7 +72,7 @@ CapsuleCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: fdec18d8f474bfe45b1babedbd7231db, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -117,6 +117,9 @@ MonoBehaviour:
   jumpPower: 1800
   maxJumpTime: 0.33
   divePower: 30
+  dirSwitchCoolDown: 0.89
+  dashSpeed: 800
+  dashCooldown: 0.48
   friction: 0.082
   airResistance: 0.077
   groundedDist: 0.133
