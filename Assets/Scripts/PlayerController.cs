@@ -1,4 +1,5 @@
 using UnityEngine;
+
 using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
@@ -17,6 +18,8 @@ public class PlayerController : MonoBehaviour
     //base data
     private Rigidbody2D rb;
     private RaycastHit2D groundCast;
+    [SerializeField] private GameObject swordT;
+    private SwordTracker tracker;
 
 
     // input manager junk
@@ -30,8 +33,10 @@ public class PlayerController : MonoBehaviour
         jumpInput = InputSystem.actions.FindAction("Jump");
         dashInput = InputSystem.actions.FindAction("Sprint");
         dirSwitchInput = InputSystem.actions.FindAction("Switch");
+        tracker = swordT.GetComponent<SwordTracker>();
 
         lastDir = 1f;
+        tracker.RegenerateCone();
     }
 
     void Update()
@@ -44,6 +49,9 @@ public class PlayerController : MonoBehaviour
         mousePos.z = 0f;
 
         Vector2 mouseDir = (mousePos - transform.position).normalized;
+        tracker.look = mouseDir;
+        tracker.RegenerateCone();
+
 
         //If you are startiung a valid jump or are continuing an existing jump, add to the hold timer
         if (jump)
