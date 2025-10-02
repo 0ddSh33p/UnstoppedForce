@@ -139,7 +139,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 80
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 1
@@ -204,17 +204,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 13
-  acceleration: 15.34
-  maxJumpVel: 2.1
-  jumpPower: 1800
+  acceleration: 1227.2
+  maxSwitch: 7.2
+  jumpPower: 144000
+  bouncePower: 30400
   maxJumpTime: 0.33
-  divePower: 30
-  dirSwitchCoolDown: 0.89
-  dashSpeed: 800
-  dashCooldown: 0.48
+  divePower: 2400
+  dirSwitchCoolDown: 0.98
+  dashSpeed: 64000
+  dashCooldown: 0.51
   friction: 0.082
   airResistance: 0.077
-  groundedDist: 0.133
+  groundedSensitivity: 0.11
+  wallSensitivity: 0.31
   ground:
     serializedVersion: 2
     m_Bits: 1

@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.U2D;
 
@@ -9,13 +10,18 @@ public class SwordTracker : MonoBehaviour
     [SerializeField] private Vector3 origin;
 
     private SpriteShapeController ssc;
+    private SpriteShapeRenderer ssr;
     private Spline spline;
+    private Color baseColor;
 
     [HideInInspector] public Vector2 look = Vector2.right;
 
     void Awake()
     {
         ssc = GetComponent<SpriteShapeController>();
+        ssr = GetComponent<SpriteShapeRenderer>();
+
+        baseColor = ssr.color;
         spline = ssc.spline;
     }
 
@@ -24,7 +30,7 @@ public class SwordTracker : MonoBehaviour
         if (spline == null) return;
 
         spline.Clear();
-        
+
         // Center point
         spline.InsertPointAt(0, origin);
 
@@ -43,5 +49,12 @@ public class SwordTracker : MonoBehaviour
         }
         // Refresh mesh
         ssc.RefreshSpriteShape();
+    }
+
+    public IEnumerator Flash(float time, Color color)
+    {
+        ssr.color = color;
+        yield return new WaitForSeconds(time);
+        ssr.color = baseColor;
     }
 }
