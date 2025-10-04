@@ -3,12 +3,10 @@ using Unity.VisualScripting;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
-public class RangedEnemy : MonoBehaviour
+public class RangedEnemy : Enemy
 {
-    public GameObject player;
     public GameObject projectile;
-    [SerializeField] private float patrolSpeed, runSpeed, alertRadius, fireInterval;
-    [SerializeField] private string state;
+    [SerializeField] private float fireInterval;
     [SerializeField] private Vector3 projectileSpawnOffset;
     private float shootingCountdown = 0;
 
@@ -17,22 +15,16 @@ public class RangedEnemy : MonoBehaviour
 
     void Action()
     {
-        Vector3 vector_to_player = player.transform.position - transform.position;
-        if (state == "neutral")
-        {
-            if (vector_to_player.magnitude < alertRadius)
-            {
-                state = "alerted";
-            }
-        }
+        
         if (state == "alerted")
         {
-            Vector3 run_velocity = new Vector3(runSpeed * (-vector_to_player.x) / Math.Abs(vector_to_player.x), 0, 0);
+            Vector3 playerDirection = player.transform.position - transform.position;
+            Vector3 run_velocity = new Vector3(runSpeed * (-playerDirection.x) / Math.Abs(playerDirection.x), 0, 0);
             transform.position += run_velocity * Time.deltaTime;
             if (shootingCountdown <= 0)
             {
                 GameObject projectileObject = Instantiate(projectile, transform.position + projectileSpawnOffset, Quaternion.identity);
-                projectileObject.GetComponent<Bullet>().setVelocity(vector_to_player);
+                projectileObject.GetComponent<Bullet>().setVelocity(playerDirection);
                 shootingCountdown = fireInterval;
             }
             else
@@ -47,13 +39,25 @@ public class RangedEnemy : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         player = GameObject.Find("Player");
-        state = "neutral";
-        print(player.transform.position.x);
     }
 
     // Update is called once per frame
     void Update()
     {
-        Action();
+
+        DetectPlayer();
+        if (state == "alerted")
+        {
+            Action();
+        }
+        else
+        {
+            Patrol();
+        }
+
+        if (state == "alerted")
+        {
+            Debug.Log("Seen!");
+        }
     }
 }
