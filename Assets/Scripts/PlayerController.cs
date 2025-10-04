@@ -1,22 +1,25 @@
 using UnityEngine;
+
 using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
     //editable vars
-    [SerializeField] private float speed, acceleration, maxJumpVel, jumpPower, maxJumpTime, divePower, dirSwitchCoolDown, dashSpeed, dashCooldown;
-    [SerializeField] [Range(0f,1f)] private float friction, airResistance, groundedDist;
+    [SerializeField] private float speed, acceleration, maxSwitch, jumpPower, bouncePower, maxJumpTime, divePower, dirSwitchCoolDown, dashSpeed, dashCooldown;
+    [SerializeField] [Range(0f,1f)] private float friction, airResistance, groundedSensitivity, wallSensitivity;
     [SerializeField] private LayerMask ground;
     [SerializeField] private AnimationCurve jumpFalloff;
 
     //internal vars
     private bool grounded = false, avalableJump = false;
-    private float heldTime, switchTime, lastDir, dashTime;
+    private float heldTime, switchTime, lastDir, dashTime, wallDir;
 
 
     //base data
     private Rigidbody2D rb;
-    private RaycastHit2D groundCast;
+    private RaycastHit2D hit;
+    [SerializeField] private GameObject swordT;
+    private SwordTracker tracker;
 
 
     // input manager junk
@@ -30,8 +33,10 @@ public class PlayerController : MonoBehaviour
         jumpInput = InputSystem.actions.FindAction("Jump");
         dashInput = InputSystem.actions.FindAction("Sprint");
         dirSwitchInput = InputSystem.actions.FindAction("Switch");
+        tracker = swordT.GetComponent<SwordTracker>();
 
         lastDir = 1f;
+        tracker.RegenerateCone();
     }
 
     void Update()
@@ -44,10 +49,13 @@ public class PlayerController : MonoBehaviour
         mousePos.z = 0f;
 
         Vector2 mouseDir = (mousePos - transform.position).normalized;
+        tracker.look = mouseDir;
+        tracker.RegenerateCone();
 
-        //If you are startiung a valid jump or are continuing an existing jump, add to the hold timer
+
+
         if (jump)
-        {
+        {   //If you are startiung a valid jump or are continuing an existing jump, add to the hold timer
             if (avalableJump && (grounded || heldTime > 0)) heldTime += Time.deltaTime;
         }
         //if jump is not being held, reset the timer
@@ -71,47 +79,67 @@ public class PlayerController : MonoBehaviour
         {
             if (switchTime == 0f)
             {
+                tracker.StartCoroutine(tracker.Flash(0.2f,new Color(1,0.1f,0.1f,0.8f)));
                 //We need to check if the direction has a platfolrm to stick the sword into, but there is no level yet so for testing reasons this is not implemented
                 if (Mathf.Abs(mouseDir.x) + Mathf.Abs(mouseDir.y) > 0f && Mathf.Abs(mouseDir.x) > Mathf.Abs(mouseDir.y))
                 {
-                    rb.linearVelocityX += Mathf.Abs(rb.linearVelocityY) * (Mathf.Abs(mouseDir.x) / mouseDir.x);
-                    rb.linearVelocityY = 0f;
+                    if (Mathf.Abs(rb.linearVelocityX) < maxSwitch)
+                    {
+                        rb.linearVelocityX += 0.667f * Mathf.Abs(rb.linearVelocityY) * (Mathf.Abs(mouseDir.x) / mouseDir.x);
+                        rb.linearVelocityX = Mathf.Clamp(rb.linearVelocityX, -maxSwitch, maxSwitch);
+                        rb.linearVelocityY = 0f;
+                    }
+
                 }
                 else
                 {
-                    rb.linearVelocityY += Mathf.Abs(rb.linearVelocityX) * (Mathf.Abs(mouseDir.y) / mouseDir.y);
-                    rb.linearVelocityX = 0f;
+                    if (Mathf.Abs(rb.linearVelocityY) < maxSwitch)
+                    {
+                        rb.linearVelocityY += 0.667f * Mathf.Abs(rb.linearVelocityX) * (Mathf.Abs(mouseDir.y) / mouseDir.y);
+                        rb.linearVelocityY = Mathf.Clamp(rb.linearVelocityY, -maxSwitch, maxSwitch);
+                        rb.linearVelocityX = 0f;
+                    }
+
                 }
             }
-            switchTime += Time.deltaTime;
 
+            //update the sitch cooldown
+            switchTime += Time.deltaTime;
             if (switchTime > dirSwitchCoolDown)
             {
                 switchTime = 0;
             }
         }
-        
+
         if (dash || dashTime > 0f)
         {
+            // if the player dashes and isnt on cooldown, add dash force
             if (dashTime == 0f)
             {
                 rb.AddForceX(dashSpeed * lastDir);
             }
 
+            //increment the cooldown timer or reset it if it is out of time
             dashTime += Time.deltaTime;
-            
+
             if (dashTime > dashCooldown)
             {
                 dashTime = 0;
             }
+        }
+
+        jump = jumpInput.WasPressedThisFrame();
+        if (jump &&  heldTime == 0 && wallDir != 0)
+        {
+            rb.AddForce(new Vector2(bouncePower * -wallDir, bouncePower * .44f));
         }
     }
 
     void FixedUpdate()
     {
         //Check if the player is on the ground
-        groundCast = Physics2D.Raycast(transform.position, Vector2.down, groundedDist, ground);
-        if (groundCast)
+        hit = Physics2D.Raycast(transform.position, Vector2.down, groundedSensitivity, ground);
+        if (hit)
         {
             grounded = true;
             if (!jumpInput.IsPressed()) avalableJump = true;
@@ -121,6 +149,22 @@ public class PlayerController : MonoBehaviour
             grounded = false;
         }
 
+        //Check for wall jumping collisions
+        if (Physics2D.Raycast(transform.position, Vector2.right, wallSensitivity, ground))
+        {
+            wallDir = 1;
+        }
+        else if (Physics2D.Raycast(transform.position, Vector2.left, wallSensitivity, ground))
+        {
+            wallDir = -1;
+        }
+        else
+        {
+            wallDir = 0;
+        }
+
+
+
         //read the players input and add it to the player speed if needed
         move = moveInput.ReadValue<Vector2>();
         if (move.x != 0)
@@ -129,7 +173,7 @@ public class PlayerController : MonoBehaviour
             lastDir = move.x;
         }
 
-        //apply friction manually because unity friction is bad
+        //apply friction manually because 2D unity friction is bad
         if (grounded)
         {
             rb.linearVelocityX *= 1f - friction;
