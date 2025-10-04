@@ -7,6 +7,12 @@ public class Bullet : MonoBehaviour
     [SerializeField] private int damage;
     public Vector3 velocity;
     public float speed;
+
+    public void setVelocity(Vector3 direction)
+    {
+        velocity = speed*direction/direction.magnitude;
+    }
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {

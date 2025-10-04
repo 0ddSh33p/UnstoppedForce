@@ -32,7 +32,7 @@ public class RangedEnemy : MonoBehaviour
             if (shootingCountdown <= 0)
             {
                 GameObject projectileObject = Instantiate(projectile, transform.position + projectileSpawnOffset, Quaternion.identity);
-                projectileObject.GetComponent<Bullet>().velocity = projectileObject.GetComponent<Bullet>().speed*vector_to_player/vector_to_player.magnitude;
+                projectileObject.GetComponent<Bullet>().setVelocity(vector_to_player);
                 shootingCountdown = fireInterval;
             }
             else
