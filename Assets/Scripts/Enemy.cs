@@ -13,24 +13,22 @@ public class Enemy : MonoBehaviour
     [SerializeField] public string state;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public void boot()
     {
         startPosition = transform.position;
         targetPosition = startPosition + Vector3.right * patrolDistance;
         state = "neutral";
         player = GameObject.Find("Player");
-
+    }
+    void Start()
+    {
+        boot();
     }
 
     // Update is called once per frame
-    void Update()
+    public void baseUpdate()
     {
-        Patrol();
         DetectPlayer();
-        if (state == "alerted")
-        {
-            Debug.Log("Seen!");
-        }
     }
 
     public void DetectPlayer()

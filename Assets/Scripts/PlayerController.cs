@@ -79,9 +79,9 @@ public class PlayerController : MonoBehaviour
 
         if (swap || switchTime > 0f)
         {
-            if (switchTime == 0f)
+            if (switchTime == 0f && tracker.hitGround)
             {
-                tracker.StartCoroutine(tracker.Flash(0.2f, new Color(1, 0.1f, 0.1f, 0.8f)));
+                tracker.StartCoroutine(tracker.Flash(0.2f, new Color(1, 0.2f, 0.12f, 0.8f)));
                 //We need to check if the direction has a platfolrm to stick the sword into, but there is no level yet so for testing reasons this is not implemented
                 if (Mathf.Abs(mouseDir.x) + Mathf.Abs(mouseDir.y) > 0f && Mathf.Abs(mouseDir.x) > Mathf.Abs(mouseDir.y))
                 {

@@ -434,7 +434,15 @@ MonoBehaviour:
   angle: 102
   radius: 2.83
   degreesPerPoint: 10
+  damage: 4
   origin: {x: 0, y: 0.956, z: 0}
+  hitGround: 0
+  ground:
+    serializedVersion: 2
+    m_Bits: 1
+  enemies:
+    serializedVersion: 2
+    m_Bits: 64
   look: {x: 0, y: 0}
 --- !u!1971053207 &5255133051572564532
 SpriteShapeRenderer:

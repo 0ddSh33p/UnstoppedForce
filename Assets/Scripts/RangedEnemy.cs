@@ -10,12 +10,9 @@ public class RangedEnemy : Enemy
     [SerializeField] private Vector3 projectileSpawnOffset;
     private float shootingCountdown = 0;
 
-
-    private Rigidbody2D rb;
-
     void Action()
     {
-        
+
         if (state == "alerted")
         {
             Vector3 playerDirection = player.transform.position - transform.position;
@@ -34,18 +31,18 @@ public class RangedEnemy : Enemy
         }
     }
 
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
-        player = GameObject.Find("Player");
+        //fix this using superclass stuff please
+        boot();
     }
 
     // Update is called once per frame
     void Update()
     {
-
-        DetectPlayer();
+        baseUpdate();
         if (state == "alerted")
         {
             Action();
@@ -57,7 +54,7 @@ public class RangedEnemy : Enemy
 
         if (state == "alerted")
         {
-            Debug.Log("Seen!");
+            //Debug.Log("Seen!");
         }
     }
 }

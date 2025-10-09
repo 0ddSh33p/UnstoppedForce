@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 3862245620672884725}
   - component: {fileID: 8940838044811020150}
   - component: {fileID: 1725975451727604325}
-  m_Layer: 0
+  - component: {fileID: 8204891906825071734}
+  m_Layer: 6
   m_Name: Enemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -121,6 +122,19 @@ MonoBehaviour:
   projectile: {fileID: 5431729150016457375, guid: ad8f359f760d48a4f8b1486527805514, type: 3}
   fireInterval: 1
   projectileSpawnOffset: {x: -0.2, y: 0.5, z: 0}
+--- !u!114 &8204891906825071734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2915095838121718481}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 110e0430e17994d65bdcadca4f787b35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 10
 --- !u!1 &3799223444119553409
 GameObject:
   m_ObjectHideFlags: 0
@@ -131,7 +145,7 @@ GameObject:
   m_Component:
   - component: {fileID: 745260841127396600}
   - component: {fileID: 3190148153348558803}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}

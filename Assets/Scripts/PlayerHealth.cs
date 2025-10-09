@@ -18,5 +18,6 @@ public class PlayerHealth : MonoBehaviour
             //Replace with respawn system in a future update
             Destroy(gameObject);
         }
+        Debug.Log(name + " " + health);
     }
 }
