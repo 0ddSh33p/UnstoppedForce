@@ -19,6 +19,8 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rb;
     private RaycastHit2D hit;
     [SerializeField] private GameObject swordT;
+    [SerializeField] private Animator anim;
+    [SerializeField] private SpriteRenderer mSprite;
     private SwordTracker tracker;
 
 
@@ -79,7 +81,7 @@ public class PlayerController : MonoBehaviour
         {
             if (switchTime == 0f)
             {
-                tracker.StartCoroutine(tracker.Flash(0.2f,new Color(1,0.1f,0.1f,0.8f)));
+                tracker.StartCoroutine(tracker.Flash(0.2f, new Color(1, 0.1f, 0.1f, 0.8f)));
                 //We need to check if the direction has a platfolrm to stick the sword into, but there is no level yet so for testing reasons this is not implemented
                 if (Mathf.Abs(mouseDir.x) + Mathf.Abs(mouseDir.y) > 0f && Mathf.Abs(mouseDir.x) > Mathf.Abs(mouseDir.y))
                 {
@@ -129,9 +131,28 @@ public class PlayerController : MonoBehaviour
         }
 
         jump = jumpInput.WasPressedThisFrame();
-        if (jump &&  heldTime == 0 && wallDir != 0)
+        if (jump && heldTime == 0 && wallDir != 0)
         {
             rb.AddForce(new Vector2(bouncePower * -wallDir, bouncePower * .44f));
+        }
+
+
+        if (rb.linearVelocityX > 0)
+        {
+            mSprite.flipX = false;
+        }
+        else if (rb.linearVelocityX < 0)
+        {
+            mSprite.flipX = true;
+        }
+        //update animation
+        if (grounded && Mathf.Abs(rb.linearVelocityX) > 0.33f )
+        {
+            anim.SetBool("Moving", true);
+        }
+        else
+        {
+            anim.SetBool("Moving", false);
         }
     }
 

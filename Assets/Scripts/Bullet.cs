@@ -5,6 +5,7 @@ public class Bullet : MonoBehaviour
     public GameObject player;
     public PlayerHealth playerHealth;
     [SerializeField] private int damage;
+    [SerializeField] private LayerMask solidObjects;
     public Vector3 velocity;
     public float speed;
 
@@ -13,14 +14,13 @@ public class Bullet : MonoBehaviour
         velocity = speed*direction/direction.magnitude;
     }
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+
     void Start()
     {
-        player = GameObject.Find("Player");
+        player = GameObject.FindGameObjectWithTag("Player");
 
     }
 
-    // Update is called once per frame
     void Update()
     {
         transform.position += velocity * Time.deltaTime;
@@ -28,16 +28,8 @@ public class Bullet : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        print("collided");
-        if (collision.gameObject.tag == "Player")
-        {
-            //playerHealth.TakeDamage(damage);
+        //bitwise shenanigans to determine if the collision in within the collision mask
+        if ((solidObjects.value & (1 << collision.transform.gameObject.layer)) > 0)
             Destroy(gameObject);
-        }
-
-        if (collision.gameObject.tag == "SolidObject")
-        {
-            Destroy(gameObject);
-        }
     }
 }

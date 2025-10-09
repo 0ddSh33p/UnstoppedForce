@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6910591843944134657}
   - component: {fileID: 1251621587052422703}
+  - component: {fileID: -242946649812542404}
   - component: {fileID: 3274989362756012083}
   m_Layer: 0
   m_Name: Bullet
@@ -27,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 5431729150016457375}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.005575336, y: -0.29604, z: -0.01624407}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.2, y: 0.2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -49,8 +50,24 @@ MonoBehaviour:
   player: {fileID: 0}
   playerHealth: {fileID: 0}
   damage: 5
+  solidObjects:
+    serializedVersion: 2
+    m_Bits: 9
   velocity: {x: -1, y: -0.00010557646, z: 0}
   speed: 3
+--- !u!114 &-242946649812542404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5431729150016457375}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b39f8e66b2ef4f7a9c9f8951ed45e90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 2
 --- !u!70 &3274989362756012083
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -114,7 +131,7 @@ Transform:
   m_GameObject: {fileID: 5608226298552374137}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0.01624407}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

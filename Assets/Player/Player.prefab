@@ -26,14 +26,14 @@ RectTransform:
   m_GameObject: {fileID: 1502450467571428453}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.3899999, y: 1.3899999, z: 1.3899999}
+  m_LocalScale: {x: 2.31, y: 2.31, z: 2.31}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 5091299952065916894}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0.609}
+  m_AnchoredPosition: {x: 0, y: 0.91}
   m_SizeDelta: {x: 1, y: 1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!331 &7393479206624199201
@@ -103,6 +103,7 @@ GameObject:
   - component: {fileID: 1434429634819400322}
   - component: {fileID: 5227340543188591390}
   - component: {fileID: 4978392811827577194}
+  - component: {fileID: 4597007772145589850}
   m_Layer: 3
   m_Name: Player
   m_TagString: Player
@@ -188,8 +189,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0.5}
-  m_Size: {x: 0.5, y: 1}
+  m_Offset: {x: 0, y: 0.9029034}
+  m_Size: {x: 0.6239703, y: 1.8058068}
   m_Direction: 0
 --- !u!114 &4978392811827577194
 MonoBehaviour:
@@ -214,9 +215,9 @@ MonoBehaviour:
   dashSpeed: 64000
   dashCooldown: 0.51
   friction: 0.082
-  airResistance: 0.077
+  airResistance: 0.03
   groundedSensitivity: 0.11
-  wallSensitivity: 0.31
+  wallSensitivity: 0.5
   ground:
     serializedVersion: 2
     m_Bits: 1
@@ -254,6 +255,21 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   swordT: {fileID: 7845112083790523105}
+  anim: {fileID: 6704343023083935918}
+  mSprite: {fileID: 1633240516923952716}
+--- !u!114 &4597007772145589850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5255573438812478713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 110e0430e17994d65bdcadca4f787b35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 10
 --- !u!1 &6770298027213569045
 GameObject:
   m_ObjectHideFlags: 0
@@ -264,6 +280,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3455978907224076715}
   - component: {fileID: 1633240516923952716}
+  - component: {fileID: 6704343023083935918}
   m_Layer: 0
   m_Name: Sprite
   m_TagString: Untagged
@@ -280,8 +297,8 @@ Transform:
   m_GameObject: {fileID: 6770298027213569045}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.5, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalPosition: {x: 0, y: 0.956, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 3498165483029441883}
@@ -330,7 +347,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -9095717837082945937, guid: 207ee8102dd4143d288186ef0be518ee, type: 3}
+  m_Sprite: {fileID: -8727339326785536534, guid: 211ab0d6fd9c18a43973933f88f8d057, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -341,6 +358,28 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &6704343023083935918
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6770298027213569045}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7bdcaa8687ab8e04090eb1fdec3f7614, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &7845112083790523105
 GameObject:
   m_ObjectHideFlags: 0
@@ -395,7 +434,7 @@ MonoBehaviour:
   angle: 102
   radius: 2.83
   degreesPerPoint: 10
-  origin: {x: 0, y: 0.609, z: 0}
+  origin: {x: 0, y: 0.956, z: 0}
   look: {x: 0, y: 0}
 --- !u!1971053207 &5255133051572564532
 SpriteShapeRenderer:
