@@ -1688,12 +1688,16 @@ PrefabInstance:
       value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 1725975451727604325, guid: 1c3ecf664b2a6c545b1c2105e2ca5220, type: 3}
+      propertyPath: alertRadius
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1725975451727604325, guid: 1c3ecf664b2a6c545b1c2105e2ca5220, type: 3}
       propertyPath: runAcceleration
-      value: 0.2
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 1725975451727604325, guid: 1c3ecf664b2a6c545b1c2105e2ca5220, type: 3}
       propertyPath: shootingAngleError
-      value: 15
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1987519273502790073, guid: 1c3ecf664b2a6c545b1c2105e2ca5220, type: 3}
       propertyPath: m_LocalPosition.x
