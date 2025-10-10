@@ -1,3 +1,4 @@
+using UnityEditor.Callbacks;
 using UnityEngine;
 
 
@@ -9,7 +10,8 @@ public class Enemy : MonoBehaviour
     private Vector3 targetPosition;
     private bool movingRight = true;
     public GameObject player;
-    [SerializeField] public float alertRadius, viewRange, viewAngle, runSpeed;
+    [SerializeField] public float currentDirection; //Keeps track of the enemy's current direction, +1 is right, -1 is left
+    [SerializeField] public float alertRadius, viewRange, viewAngle, runSpeed, runAcceleration;
     [SerializeField] public string state;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -29,6 +31,19 @@ public class Enemy : MonoBehaviour
     public void baseUpdate()
     {
         DetectPlayer();
+    }
+
+    public void faceDirection(float direction) //Change the enemy's current direction, +1 is right, -1 is left
+    {
+        currentDirection = direction;
+        transform.localScale = new Vector3(direction, transform.localScale.y, transform.localScale.z);
+    }
+
+    public void run(float targetVelocity, float acceleration) //Target velocity is eventual velocity, positive is right, negative is left
+    {
+        Rigidbody2D rb = gameObject.GetComponent<Rigidbody2D>();
+        float force_magnitude = (targetVelocity - rb.linearVelocityX) * acceleration;
+        rb.AddForce(new Vector3(force_magnitude, 0, 0));
     }
 
     public void DetectPlayer()
@@ -62,10 +77,12 @@ public class Enemy : MonoBehaviour
             if (movingRight)
             {
                 targetPosition = startPosition + Vector3.right * patrolDistance;
+                faceDirection(1);
             }
             else
             {
                 targetPosition = startPosition - Vector3.right * patrolDistance;
+                faceDirection(-1);
             }
         }
     }

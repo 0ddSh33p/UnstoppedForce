@@ -2,26 +2,32 @@ using System;
 using Unity.VisualScripting;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
+using Random=UnityEngine.Random;
 
 public class RangedEnemy : Enemy
 {
     public GameObject projectile;
-    [SerializeField] private float fireInterval;
+    [SerializeField] private float fireInterval, shootingAngleError;
     [SerializeField] private Vector3 projectileSpawnOffset;
     private float shootingCountdown = 0;
 
     void Action()
     {
-
         if (state == "alerted")
         {
             Vector3 playerDirection = player.transform.position - transform.position;
-            Vector3 run_velocity = new Vector3(runSpeed * (-playerDirection.x) / Math.Abs(playerDirection.x), 0, 0);
-            transform.position += run_velocity * Time.deltaTime;
+            faceDirection(Mathf.Sign(playerDirection.x));
+            float shootingAngle = Random.Range(-shootingAngleError, shootingAngleError);
+            Vector3 shootDirection = Quaternion.AngleAxis(shootingAngle, new Vector3(0, 0, 1))*playerDirection;
+
+            float z_rotation = Mathf.Rad2Deg * Mathf.Atan2(shootDirection.y, shootDirection.x);
+
+            run(-Mathf.Sign(playerDirection.x) * runSpeed, runAcceleration);
             if (shootingCountdown <= 0)
             {
-                GameObject projectileObject = Instantiate(projectile, transform.position + projectileSpawnOffset, Quaternion.identity);
-                projectileObject.GetComponent<Bullet>().setVelocity(playerDirection);
+                Vector3 directedprojectileSpawnOffset = new Vector3(currentDirection * projectileSpawnOffset.x, projectileSpawnOffset.y, projectileSpawnOffset.z);
+                GameObject projectileObject = Instantiate(projectile, transform.position + directedprojectileSpawnOffset, Quaternion.AngleAxis(z_rotation, new Vector3(0, 0, 1)));
+                projectileObject.GetComponent<Bullet>().setVelocity(shootDirection);
                 shootingCountdown = fireInterval;
             }
             else

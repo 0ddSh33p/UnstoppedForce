@@ -216,6 +216,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4597007772145589850, guid: de26bdb78313e1045a97e6d6340a39a7, type: 3}
+      propertyPath: maxHealth
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5255133051572564532, guid: de26bdb78313e1045a97e6d6340a39a7, type: 3}
       propertyPath: m_LocalAABB.m_Center.x
       value: 1.3780699
@@ -1671,12 +1675,7 @@ TilemapCollider2D:
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0
   m_UseDelaunayMesh: 0
---- !u!1 &1860364873 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5255573438812478713, guid: de26bdb78313e1045a97e6d6340a39a7, type: 3}
-  m_PrefabInstance: {fileID: 143410448}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &6321159702537416193
+--- !u!1001 &1351908982
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -1684,6 +1683,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1725975451727604325, guid: 1c3ecf664b2a6c545b1c2105e2ca5220, type: 3}
+      propertyPath: runSpeed
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1725975451727604325, guid: 1c3ecf664b2a6c545b1c2105e2ca5220, type: 3}
+      propertyPath: runAcceleration
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1725975451727604325, guid: 1c3ecf664b2a6c545b1c2105e2ca5220, type: 3}
+      propertyPath: shootingAngleError
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 1987519273502790073, guid: 1c3ecf664b2a6c545b1c2105e2ca5220, type: 3}
       propertyPath: m_LocalPosition.x
       value: 10.49
@@ -1726,26 +1737,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2915095838121718481, guid: 1c3ecf664b2a6c545b1c2105e2ca5220, type: 3}
       propertyPath: m_Name
-      value: Enemy
-      objectReference: {fileID: 0}
-    - target: {fileID: 2915095838121718481, guid: 1c3ecf664b2a6c545b1c2105e2ca5220, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3799223444119553409, guid: 1c3ecf664b2a6c545b1c2105e2ca5220, type: 3}
-      propertyPath: m_Layer
-      value: 6
+      value: RangedEnemy
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1c3ecf664b2a6c545b1c2105e2ca5220, type: 3}
+--- !u!1 &1860364873 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5255573438812478713, guid: de26bdb78313e1045a97e6d6340a39a7, type: 3}
+  m_PrefabInstance: {fileID: 143410448}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 519420032}
   - {fileID: 143410448}
-  - {fileID: 6321159702537416193}
+  - {fileID: 1351908982}
   - {fileID: 69330605}
