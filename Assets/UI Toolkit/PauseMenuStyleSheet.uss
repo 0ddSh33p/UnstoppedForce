@@ -1,0 +1,38 @@
+/* Variables */
+:root {
+  /* Colors */
+  /* This is a placeholder color palette; just wanted something cohesive to temporarily work with */
+  --color1: #22223B;
+  --color2: #4A4E69;
+  --color3: #9A8C98;
+  --color4: #C9ADA7;
+  --color4: #F2E9E4;
+
+  /* Typography (so far just font sizes) */
+  --font-size-s: 20px;
+  --font-size-m: 30px;
+  --font-size-l: 50px;
+}
+
+
+.button {
+    width: 180px;
+    height: 65px;
+    -unity-font-style: bold;
+    font-size: var(--font-size-m);
+    background-color: var(--color1);
+    color: var(--color3);
+    border-top-width: 5px;
+    border-right-width: 5px;
+    border-bottom-width: 5px;
+    border-left-width: 5px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.button:hover  {
+    background-color: var(--color3); 
+    color: var(--color1);
+    }
