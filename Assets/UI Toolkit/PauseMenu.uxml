@@ -1,0 +1,10 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement name="pauseMenuContainer" style="flex-grow: 1; justify-content: space-between; flex-basis: 20%; align-items: center; padding-left: 15%; padding-right: 15%; background-color: rgba(0, 0, 0, 0.51);">
+        <ui:VisualElement name="Container" style="flex-grow: 1;">
+            <ui:Button text="Resume" name="buttonResume" class="button" />
+            <ui:Button text="Retry" name="buttonRetry" class="button" />
+            <ui:Button text="Settings" name="buttonSettings" class="button" />
+            <ui:Button text="Quit" name="buttonQuit" class="button" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
