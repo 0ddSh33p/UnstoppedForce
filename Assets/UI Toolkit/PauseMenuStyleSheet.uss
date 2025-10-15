@@ -22,17 +22,14 @@
     font-size: var(--font-size-m);
     background-color: var(--color1);
     color: var(--color3);
-    border-top-width: 5px;
-    border-right-width: 5px;
-    border-bottom-width: 5px;
-    border-left-width: 5px;
+    border-width: 2px;
     border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
+    border-radius: 10px;
+    border-color: var(--color3);
 }
 
 .button:hover  {
     background-color: var(--color3); 
     color: var(--color1);
+    border-color: var(--color1);
     }
