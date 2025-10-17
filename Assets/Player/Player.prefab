@@ -207,7 +207,7 @@ MonoBehaviour:
   speed: 13
   acceleration: 1227.2
   maxSwitch: 7.2
-  jumpPower: 144000
+  jumpPower: 180000
   bouncePower: 30400
   maxJumpTime: 0.33
   divePower: 2400
