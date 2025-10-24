@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: spikes-1_3
+  m_Name: woodpost-1_0
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 2119869140, guid: 76e262cee6098d94fa9e6e3d4e852646, type: 3}
+  m_Sprite: {fileID: 3055874547461864526, guid: 789cc8c7e1250fd4cba412f6a52373a1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1

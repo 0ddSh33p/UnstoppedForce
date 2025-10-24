@@ -43,7 +43,7 @@ TagManager:
   - name: background
     uniqueID: 3374645673
     locked: 0
-  - name: level
+  - name: leveldecor
     uniqueID: 88530101
     locked: 0
   - name: Default

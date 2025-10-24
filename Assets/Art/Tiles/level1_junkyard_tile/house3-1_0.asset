@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: airwall
+  m_Name: house3-1_0
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 21300000, guid: d92efcfa7f4f3d04db9d70d86bf40678, type: 3}
+  m_Sprite: {fileID: 4854027735402093136, guid: 5a3e3c24b8a1601489b3775eb0d361b7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1
