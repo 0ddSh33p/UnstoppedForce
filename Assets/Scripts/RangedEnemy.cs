@@ -20,13 +20,12 @@ public class RangedEnemy : Enemy
             float shootingAngle = Random.Range(-shootingAngleError, shootingAngleError);
             Vector3 shootDirection = Quaternion.AngleAxis(shootingAngle, new Vector3(0, 0, 1))*playerDirection;
 
-            float z_rotation = Mathf.Rad2Deg * Mathf.Atan2(shootDirection.y, shootDirection.x);
 
             run(-Mathf.Sign(playerDirection.x) * runSpeed, runAcceleration);
             if (shootingCountdown <= 0)
             {
                 Vector3 directedprojectileSpawnOffset = new Vector3(currentDirection * projectileSpawnOffset.x, projectileSpawnOffset.y, projectileSpawnOffset.z);
-                GameObject projectileObject = Instantiate(projectile, transform.position + directedprojectileSpawnOffset, Quaternion.AngleAxis(z_rotation, new Vector3(0, 0, 1)));
+                GameObject projectileObject = Instantiate(projectile, transform.position + directedprojectileSpawnOffset, Quaternion.identity);
                 projectileObject.GetComponent<Bullet>().setVelocity(shootDirection);
                 shootingCountdown = fireInterval;
             }
@@ -34,6 +33,7 @@ public class RangedEnemy : Enemy
             {
                 shootingCountdown -= Time.deltaTime;
             }
+
         }
     }
 

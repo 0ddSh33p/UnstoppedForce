@@ -8,6 +8,7 @@ public class Enemy : MonoBehaviour
     private float patrolDistance = 3f;
     private Vector3 startPosition;
     private Vector3 targetPosition;
+    private Collider rightEdgeCollider;
     private bool movingRight = true;
     public GameObject player;
     [SerializeField] public float currentDirection; //Keeps track of the enemy's current direction, +1 is right, -1 is left
