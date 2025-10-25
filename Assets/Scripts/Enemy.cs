@@ -1,3 +1,4 @@
+using NUnit.Framework;
 using UnityEditor.Callbacks;
 using UnityEngine;
 
@@ -8,7 +9,8 @@ public class Enemy : MonoBehaviour
     private float patrolDistance = 3f;
     private Vector3 startPosition;
     private Vector3 targetPosition;
-    private Collider rightEdgeCollider;
+    private float edgeDetectionWidth = 0.5f;
+    private float edgeDetectionDepth = 1.5f;
     private bool movingRight = true;
     public GameObject player;
     [SerializeField] public float currentDirection; //Keeps track of the enemy's current direction, +1 is right, -1 is left
@@ -43,8 +45,36 @@ public class Enemy : MonoBehaviour
     public void run(float targetVelocity, float acceleration) //Target velocity is eventual velocity, positive is right, negative is left
     {
         Rigidbody2D rb = gameObject.GetComponent<Rigidbody2D>();
-        float force_magnitude = (targetVelocity - rb.linearVelocityX) * acceleration;
-        rb.AddForce(new Vector3(force_magnitude, 0, 0));
+        string runState = "stopping";
+        if (targetVelocity > 0) //going right
+        {
+            RaycastHit2D rightHit = Physics2D.Raycast(transform.position + new Vector3(edgeDetectionWidth, 0, 0), Vector3.down, edgeDetectionDepth);
+            if (rightHit)
+            {
+                if (rightHit.collider.gameObject.tag == "SolidObject")
+                {
+                    runState = "running";
+                }
+            }
+        }
+
+        if (targetVelocity <= 0) //going left
+        {
+            RaycastHit2D leftHit = Physics2D.Raycast(transform.position + new Vector3(-edgeDetectionWidth, 0, 0), Vector3.down, edgeDetectionDepth);
+            if (leftHit)
+            {
+                if (leftHit.collider.gameObject.tag == "SolidObject")
+                {
+                    runState = "running";
+                }
+            }
+        }
+
+        if (runState == "running")
+        {
+            float force_magnitude = (targetVelocity - rb.linearVelocityX) * acceleration;
+            rb.AddForce(new Vector3(force_magnitude, 0, 0));
+        }
     }
 
     public void DetectPlayer()
