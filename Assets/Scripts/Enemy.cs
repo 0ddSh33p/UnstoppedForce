@@ -79,14 +79,23 @@ public class Enemy : MonoBehaviour
 
     public void DetectPlayer()
     {
-
         Vector3 playerDirection = player.transform.position - transform.position;
         if (playerDirection.magnitude < alertRadius)
         {
             state = "alerted";
         }
 
-        float angleToPlayer = Vector3.Angle(transform.right, playerDirection);
+        Vector3 forward;
+        if (currentDirection > 0)
+        {
+            forward = Vector3.right;
+        }
+        else
+        {
+            forward = Vector3.left;
+        }
+
+        float angleToPlayer = Vector3.Angle(forward, playerDirection);
         if (angleToPlayer < viewAngle / 2 && playerDirection.magnitude < viewRange)
         {
             RaycastHit2D hit = Physics2D.Raycast(transform.position, playerDirection, viewRange);
@@ -94,9 +103,31 @@ public class Enemy : MonoBehaviour
             {
                 state = "alerted";
             }
-
         }
+    }
 
+    private void OnDrawGizmosSelected()
+    {
+        // Radius
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(transform.position, alertRadius);
+
+        // Cone
+        Gizmos.color = Color.red;
+        Vector3 forward;
+        if (currentDirection > 0)
+        {
+            forward = Vector3.right;
+        }
+        else
+        {
+            forward = Vector3.left;
+        }
+        Vector3 leftRay = Quaternion.Euler(0, 0, viewAngle / 2) * forward * viewRange;
+        Vector3 rightRay = Quaternion.Euler(0, 0, -viewAngle / 2) * forward * viewRange;
+
+        Gizmos.DrawLine(transform.position, transform.position + leftRay);
+        Gizmos.DrawLine(transform.position, transform.position + rightRay);
     }
 
     public void Patrol()
