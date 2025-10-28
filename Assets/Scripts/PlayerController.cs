@@ -136,24 +136,9 @@ public class PlayerController : MonoBehaviour
             rb.AddForce(new Vector2(bouncePower * -wallDir, bouncePower * .44f));
         }
 
-
-        if (rb.linearVelocityX > 0)
-        {
-            mSprite.flipX = false;
-        }
-        else if (rb.linearVelocityX < 0)
-        {
-            mSprite.flipX = true;
-        }
         //update animation
-        if (grounded && Mathf.Abs(rb.linearVelocityX) > 0.33f )
-        {
-            anim.SetBool("Moving", true);
-        }
-        else
-        {
-            anim.SetBool("Moving", false);
-        }
+        anim.SetInteger("MoveDir", (int)rb.linearVelocityX);
+
     }
 
     void FixedUpdate()
