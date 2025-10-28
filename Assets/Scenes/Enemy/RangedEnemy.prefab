@@ -117,8 +117,8 @@ MonoBehaviour:
   player: {fileID: 0}
   currentDirection: 0
   alertRadius: 2
-  viewRange: 0
-  viewAngle: 0
+  viewRange: 20
+  viewAngle: 60
   runSpeed: 1
   runAcceleration: 1.6
   state: 
