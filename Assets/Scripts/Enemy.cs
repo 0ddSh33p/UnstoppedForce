@@ -6,7 +6,7 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     public float patrolSpeed = 2f;
-    private float patrolDistance = 3f;
+    private float patrolDistance = 2f;
     private Vector3 startPosition;
     private Vector3 targetPosition;
     private float edgeDetectionWidth = 0.5f;
@@ -123,8 +123,11 @@ public class Enemy : MonoBehaviour
         {
             forward = Vector3.left;
         }
-        Vector3 leftRay = Quaternion.Euler(0, 0, viewAngle / 2) * forward * viewRange;
-        Vector3 rightRay = Quaternion.Euler(0, 0, -viewAngle / 2) * forward * viewRange;
+
+        float halfAngle = viewAngle / 2f;
+
+        Vector3 leftRay = Quaternion.Euler(0, 0, halfAngle) * forward * viewRange;
+        Vector3 rightRay = Quaternion.Euler(0, 0, -halfAngle) * forward * viewRange;
 
         Gizmos.DrawLine(transform.position, transform.position + leftRay);
         Gizmos.DrawLine(transform.position, transform.position + rightRay);
@@ -132,8 +135,9 @@ public class Enemy : MonoBehaviour
 
     public void Patrol()
     {
-        transform.position = Vector3.MoveTowards(transform.position, targetPosition, patrolSpeed * Time.deltaTime);
-        if (transform.position == targetPosition)
+        Vector3 target = new Vector3(targetPosition.x, transform.position.y, transform.position.z);
+        transform.position = Vector3.MoveTowards(transform.position, target, patrolSpeed * Time.deltaTime);
+        if (Mathf.Abs(transform.position.x - targetPosition.x) < 0.05f)
         {
             movingRight = !movingRight;
             if (movingRight)
