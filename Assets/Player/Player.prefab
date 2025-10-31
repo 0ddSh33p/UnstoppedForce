@@ -204,8 +204,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d7b895af00e8a04b8001e09262a7b1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 13
-  acceleration: 1227.2
+  momentum: 0
+  maxMomentum: 100
+  momentumDecayRate: 0
+  speed: 10
+  acceleration: 1000
   maxSwitch: 7.2
   jumpPower: 180000
   bouncePower: 30400
@@ -257,6 +260,7 @@ MonoBehaviour:
   swordT: {fileID: 7845112083790523105}
   anim: {fileID: 6704343023083935918}
   mSprite: {fileID: 1633240516923952716}
+  momentumBarUI: {fileID: 0}
 --- !u!114 &4597007772145589850
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -269,7 +273,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 110e0430e17994d65bdcadca4f787b35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 10
+  maxHealth: 9999
+  healthBarUI: {fileID: 0}
 --- !u!1 &6770298027213569045
 GameObject:
   m_ObjectHideFlags: 0

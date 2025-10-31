@@ -5,7 +5,7 @@ using UnityEngine.InputSystem;
 public class PlayerController : MonoBehaviour
 {
     //editable vars
-    [SerializeField] private float speed, acceleration, maxSwitch, jumpPower, bouncePower, maxJumpTime, divePower, dirSwitchCoolDown, dashSpeed, dashCooldown;
+    [SerializeField] private float momentum, maxMomentum, momentumDecayRate, speed, acceleration, maxSwitch, jumpPower, bouncePower, maxJumpTime, divePower, dirSwitchCoolDown, dashSpeed, dashCooldown;
     [SerializeField] [Range(0f,1f)] private float friction, airResistance, groundedSensitivity, wallSensitivity;
     [SerializeField] private LayerMask ground;
     [SerializeField] private AnimationCurve jumpFalloff;
@@ -22,7 +22,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Animator anim;
     [SerializeField] private SpriteRenderer mSprite;
     private SwordTracker tracker;
-
+    public MomentumBarUI momentumBarUI;
 
     // input manager junk
     InputAction moveInput, jumpInput, dirSwitchInput, dashInput;
@@ -36,12 +36,15 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
+        momentum = 0;
         rb = GetComponent<Rigidbody2D>();
         moveInput = InputSystem.actions.FindAction("Move");
         jumpInput = InputSystem.actions.FindAction("Jump");
         dashInput = InputSystem.actions.FindAction("Sprint");
         dirSwitchInput = InputSystem.actions.FindAction("Switch");
         tracker = swordT.GetComponent<SwordTracker>();
+        momentumBarUI = GameObject.Find("Momentum").GetComponent<MomentumBarUI>();
+        momentumBarUI.setMomentum(momentum, maxMomentum);
 
         lastDir = 1f;
         tracker.RegenerateCone();
@@ -126,7 +129,7 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        if (dash || dashTime > 0f)
+        if ((dash || dashTime > 0f) && (50 < momentum))
         {
             // if the player dashes and isnt on cooldown, add dash force
             if (dashTime == 0f)
@@ -223,5 +226,16 @@ public class PlayerController : MonoBehaviour
                 rb.AddForceY(-divePower);
             }
         }
+
+        momentum -= momentum * momentumDecayRate * Time.deltaTime;
+        momentumBarUI.setMomentum(momentum, maxMomentum);
+
+    }
+
+    public void increaseMomentum(float dm)
+    {
+        momentum += dm;
+        momentum = Mathf.Clamp(momentum, 0, 100);
+        momentumBarUI.setMomentum(momentum, maxMomentum);
     }
 }

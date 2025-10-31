@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 3862245620672884725}
   - component: {fileID: 8940838044811020150}
   - component: {fileID: 1725975451727604325}
-  - component: {fileID: 8204891906825071734}
   m_Layer: 6
   m_Name: RangedEnemy
   m_TagString: Enemy
@@ -113,6 +112,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fae7962b597481d44a8bcd983048294f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxHealth: 10
+  momentumGain: 20
   patrolSpeed: 2
   player: {fileID: 0}
   currentDirection: 0
@@ -124,21 +125,8 @@ MonoBehaviour:
   state: 
   projectile: {fileID: 5431729150016457375, guid: ad8f359f760d48a4f8b1486527805514, type: 3}
   fireInterval: 1
-  shootingAngleError: 0
+  shootingAngleError: 10
   projectileSpawnOffset: {x: 0.4, y: 0.8, z: 0}
---- !u!114 &8204891906825071734
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2915095838121718481}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 110e0430e17994d65bdcadca4f787b35, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHealth: 10
 --- !u!1 &3641089250205484174
 GameObject:
   m_ObjectHideFlags: 0

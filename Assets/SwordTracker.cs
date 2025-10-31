@@ -81,7 +81,7 @@ public class SwordTracker : MonoBehaviour
                 {
                     if (hit.transform.gameObject.CompareTag("Enemy") && !prevHits.Contains(hit.transform.gameObject))
                     {
-                        PlayerHealth script = hit.transform.gameObject.GetComponent<PlayerHealth>();
+                        Enemy script = hit.transform.gameObject.GetComponent<Enemy>();
                         script.TakeDamage(damage);
                         prevHits[i] = hit.transform.gameObject;
                     }

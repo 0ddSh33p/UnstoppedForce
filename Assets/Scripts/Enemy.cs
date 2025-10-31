@@ -5,6 +5,9 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+    private float health;
+    public float maxHealth = 10;
+    public float momentumGain;
     public float patrolSpeed = 2f;
     private float patrolDistance = 2f;
     private Vector3 startPosition;
@@ -20,6 +23,7 @@ public class Enemy : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public void boot()
     {
+        health = maxHealth;
         startPosition = transform.position;
         targetPosition = startPosition + Vector3.right * patrolDistance;
         state = "neutral";
@@ -51,10 +55,10 @@ public class Enemy : MonoBehaviour
             RaycastHit2D rightHit = Physics2D.Raycast(transform.position + new Vector3(edgeDetectionWidth, 0, 0), Vector3.down, edgeDetectionDepth);
             if (rightHit)
             {
-                if (rightHit.collider.gameObject.tag == "SolidObject")
-                {
+                // if (rightHit.collider.gameObject.tag == "SolidObject")
+                // {
                     runState = "running";
-                }
+                // }
             }
         }
 
@@ -63,10 +67,10 @@ public class Enemy : MonoBehaviour
             RaycastHit2D leftHit = Physics2D.Raycast(transform.position + new Vector3(-edgeDetectionWidth, 0, 0), Vector3.down, edgeDetectionDepth);
             if (leftHit)
             {
-                if (leftHit.collider.gameObject.tag == "SolidObject")
-                {
+                // if (leftHit.collider.gameObject.tag == "SolidObject")
+                // {
                     runState = "running";
-                }
+                // }
             }
         }
 
@@ -151,5 +155,16 @@ public class Enemy : MonoBehaviour
                 faceDirection(-1);
             }
         }
+    }
+
+    public void TakeDamage(float amount)
+    {
+        health -= amount;
+        if (health <= 0)
+        {
+            player.GetComponent<PlayerController>().increaseMomentum(momentumGain);
+            Destroy(gameObject);
+        }
+        Debug.Log(name + " " + health);
     }
 }
