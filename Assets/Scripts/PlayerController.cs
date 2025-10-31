@@ -123,7 +123,7 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        if ((dash || dashTime > 0f) && (50 < momentum))
+        if ((dash || dashTime > 0f) && (10 < momentum))
         {
             // if the player dashes and isnt on cooldown, add dash force
             if (dashTime == 0f)
