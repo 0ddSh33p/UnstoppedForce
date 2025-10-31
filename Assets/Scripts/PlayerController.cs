@@ -28,12 +28,6 @@ public class PlayerController : MonoBehaviour
     InputAction moveInput, jumpInput, dirSwitchInput, dashInput;
     Vector2 move;
 
-    private void Awake()
-    {
-        var players = GameObject.FindGameObjectsWithTag("Player");
-        DontDestroyOnLoad(gameObject);
-    }
-
     void Start()
     {
         momentum = 0;
