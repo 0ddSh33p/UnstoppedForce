@@ -138,6 +138,7 @@ public class PlayerController : MonoBehaviour
 
         //update animation
         anim.SetInteger("MoveDir", (int)rb.linearVelocityX);
+        
 
     }
 
