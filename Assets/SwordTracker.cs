@@ -11,6 +11,8 @@ public class SwordTracker : MonoBehaviour
     public float radius = 3f;
     [SerializeField] private float degreesPerPoint = 10f, damage = 4f; // ~1 point per 10°
     [SerializeField] private Vector3 origin;
+    [SerializeField] private Animator anim;
+
 
     private SpriteShapeController ssc;
     private SpriteShapeRenderer ssr;
@@ -21,7 +23,7 @@ public class SwordTracker : MonoBehaviour
     [HideInInspector] public Vector2 look = Vector2.right;
 
     InputAction dirSwitchInput;
-    private bool attack;
+    private bool attack, attacking;
  
     void Awake()
     {
@@ -32,12 +34,18 @@ public class SwordTracker : MonoBehaviour
 
         baseColor = ssr.color;
         spline = ssc.spline;
+        attacking = false;
     }
 
     void Update()
     {
         attack = dirSwitchInput.WasPressedThisFrame();
-        if (attack) StartCoroutine(Flash(0.2f,new Color(1, 0, 0, 0.8f)));
+        if (attack && !attacking)
+        {
+            attacking = true;
+            anim.SetTrigger("Swing");
+            StartCoroutine(Flash(0.2f, new Color(1, 0, 0, 0.8f)));
+        }
     }
 
     public void RegenerateCone()
@@ -90,8 +98,10 @@ public class SwordTracker : MonoBehaviour
 
     public IEnumerator Flash(float time, Color color)
     {
+        yield return new WaitForEndOfFrame();
         ssr.color = color;
         yield return new WaitForSeconds(time);
         ssr.color = baseColor;
+        attacking = false;
     }
 }

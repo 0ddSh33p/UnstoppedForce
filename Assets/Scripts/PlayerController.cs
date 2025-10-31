@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private AnimationCurve jumpFalloff;
 
     //internal vars
-    private bool grounded = false, avalableJump = false;
+    private bool grounded = false, avalableJump = false, runJumpAnim = false;
     private float heldTime, switchTime, lastDir, dashTime, wallDir;
 
 
@@ -69,6 +69,7 @@ public class PlayerController : MonoBehaviour
         //if jump is not being held, reset the timer
         else if (heldTime > 0)
         {
+            runJumpAnim = false;
             avalableJump = false;
             heldTime = 0f;
         }
@@ -76,6 +77,11 @@ public class PlayerController : MonoBehaviour
         //if the hold timer is on, we assume the player is jumping
         if (heldTime > 0f)
         {
+            if (!runJumpAnim)
+            {
+                anim.SetTrigger("Jump");
+                runJumpAnim = true;
+            }
             //as long as the maximum tinme has not been exceeded, add a vertical force based on the power, time, and falloff curve
             if (heldTime <= maxJumpTime)
             {
@@ -88,7 +94,8 @@ public class PlayerController : MonoBehaviour
             if (switchTime == 0f && tracker.hitGround)
             {
                 tracker.StartCoroutine(tracker.Flash(0.2f, new Color(1, 0.2f, 0.12f, 0.8f)));
-                //We need to check if the direction has a platfolrm to stick the sword into, but there is no level yet so for testing reasons this is not implemented
+                //We need to check if the direction has a platfolrm to stick the sword into, but im lazy, so oh well...
+                anim.SetTrigger("Pivot");
                 if (Mathf.Abs(mouseDir.x) + Mathf.Abs(mouseDir.y) > 0f && Mathf.Abs(mouseDir.x) > Mathf.Abs(mouseDir.y))
                 {
                     if (Mathf.Abs(rb.linearVelocityX) < maxSwitch)
@@ -143,8 +150,24 @@ public class PlayerController : MonoBehaviour
         }
 
         //update animation
-        anim.SetInteger("MoveDir", (int)rb.linearVelocityX);
-        
+        if (lastDir > 0)
+        {
+            anim.SetInteger("MoveDir", 1);
+        }
+        else if (lastDir < 0)
+        {
+            anim.SetInteger("MoveDir", -1);
+        }
+
+        anim.SetInteger("UpVel", (int)rb.linearVelocityY);
+
+        if(grounded && Mathf.Abs(rb.linearVelocityX) > 0.33f)
+        {
+            anim.SetBool("Walking", true);
+        } else {
+            anim.SetBool("Walking", false);
+            
+        }
 
     }
 
