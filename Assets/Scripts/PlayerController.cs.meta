@@ -1,2 +1,20 @@
 fileFormatVersion: 2
 guid: 5d7b895af00e8a04b8001e09262a7b1d
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - footstepSource: {instanceID: 0}
+  - sfxSource: {instanceID: 0}
+  - footstepClip: {instanceID: 0}
+  - swordSwingClip: {instanceID: 0}
+  - dashClip: {instanceID: 0}
+  - swordT: {instanceID: 0}
+  - anim: {instanceID: 0}
+  - mSprite: {instanceID: 0}
+  - momentumBarUI: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

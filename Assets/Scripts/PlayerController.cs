@@ -10,6 +10,15 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private LayerMask ground;
     [SerializeField] private AnimationCurve jumpFalloff;
 
+    // AUDIO 
+    [Header("Audio")]
+    [SerializeField] private AudioSource footstepSource;   
+    [SerializeField] private AudioSource sfxSource;        
+    [SerializeField] private AudioClip footstepClip;
+    [SerializeField] private AudioClip swordSwingClip;
+    [SerializeField] private AudioClip dashClip;
+    private bool isWalking;    
+
     //internal vars
     private bool grounded = false, avalableJump = false, runJumpAnim = false;
     private float heldTime, switchTime, lastDir, dashTime, wallDir;
@@ -42,6 +51,19 @@ public class PlayerController : MonoBehaviour
 
         lastDir = 1f;
         tracker.RegenerateCone();
+
+        //Audio Setup
+        if (footstepSource != null)
+        {
+            footstepSource.loop = true;
+            footstepSource.playOnAwake = false;
+            if (footstepClip != null)
+                footstepSource.clip = footstepClip;
+        }
+        if (sfxSource != null)
+        {
+            sfxSource.playOnAwake = false;
+        }
     }
 
     void Update()
@@ -57,7 +79,11 @@ public class PlayerController : MonoBehaviour
         tracker.look = mouseDir;
         tracker.RegenerateCone();
 
-
+        //If pressing mouse left, play the sword swing sound
+        if (Input.GetMouseButtonDown(0))
+        {
+            PlaySFX(swordSwingClip);
+        }
 
         if (jump)
         {   //If you are startiung a valid jump or are continuing an existing jump, add to the hold timer
@@ -129,6 +155,7 @@ public class PlayerController : MonoBehaviour
             if (dashTime == 0f)
             {
                 rb.AddForceX(dashSpeed * lastDir);
+                PlaySFX(dashClip, 3f);
             }
 
             //increment the cooldown timer or reset it if it is out of time
@@ -165,6 +192,27 @@ public class PlayerController : MonoBehaviour
             anim.SetBool("Walking", false);
             
         }
+
+        bool walkingNow = grounded && Mathf.Abs(rb.linearVelocityX) > 0.33f;
+
+        // play footstep sound if the player is walking
+        if (walkingNow && !isWalking)
+        {
+            if (footstepSource != null && footstepClip != null)
+            {
+                footstepSource.Play();
+            }
+        }
+        else if (!walkingNow && isWalking)
+        {
+            // 停止走路 / 跳起
+            if (footstepSource != null)
+            {
+                footstepSource.Stop();
+            }
+        }
+        isWalking = walkingNow;
+
 
     }
 
@@ -231,5 +279,11 @@ public class PlayerController : MonoBehaviour
         momentum += dm;
         momentum = Mathf.Clamp(momentum, 0, 100);
         momentumBarUI.setMomentum(momentum, maxMomentum);
+    }
+
+    private void PlaySFX(AudioClip clip, float volume = 1f)
+    {
+        if (clip == null || sfxSource == null) return;
+        sfxSource.PlayOneShot(clip, volume);
     }
 }
