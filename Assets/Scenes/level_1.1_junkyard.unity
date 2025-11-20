@@ -724,6 +724,53 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1c3ecf664b2a6c545b1c2105e2ca5220, type: 3}
+--- !u!1 &866620488
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 866620489}
+  - component: {fileID: 866620490}
+  m_Layer: 0
+  m_Name: BGMChapter_1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &866620489
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 866620488}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1826732701}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &866620490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 866620488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcce07fd35402dc49b90a091c9c7d08d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BGMChapterStarter
+  normalBgm: {fileID: 8300000, guid: 654eeaada3a6897438531cd648b0bcea, type: 3}
+  momentum50Bgm: {fileID: 8300000, guid: 4c25fa2dfbe64c547913ed6dd2f13ce7, type: 3}
+  momentum100Bgm: {fileID: 8300000, guid: 633746c8631bd5948b015a5d6cc66885, type: 3}
 --- !u!1 &1308657756 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5255573438812478713, guid: de26bdb78313e1045a97e6d6340a39a7, type: 3}
@@ -1047,6 +1094,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df9b8fdd06ae1c44aaba1ca878bf2c93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  normalBgm: {fileID: 8300000, guid: 654eeaada3a6897438531cd648b0bcea, type: 3}
+  momentum50Bgm: {fileID: 8300000, guid: 4c25fa2dfbe64c547913ed6dd2f13ce7, type: 3}
+  momentum100Bgm: {fileID: 8300000, guid: 633746c8631bd5948b015a5d6cc66885, type: 3}
 --- !u!82 &1826732700
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1156,7 +1206,8 @@ Transform:
   m_LocalPosition: {x: 11.965027, y: 7.516498, z: -0.27972046}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 866620489}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1838787036

@@ -271,6 +271,8 @@ public class PlayerController : MonoBehaviour
 
         momentum -= momentum * momentumDecayRate * Time.deltaTime;
         momentumBarUI.setMomentum(momentum, maxMomentum);
+        if (BGMManager.Instance != null)
+            BGMManager.Instance.UpdateMomentum(momentum);
 
     }
 
@@ -279,6 +281,8 @@ public class PlayerController : MonoBehaviour
         momentum += dm;
         momentum = Mathf.Clamp(momentum, 0, 100);
         momentumBarUI.setMomentum(momentum, maxMomentum);
+        if (BGMManager.Instance != null)
+            BGMManager.Instance.UpdateMomentum(momentum);
     }
 
     private void PlaySFX(AudioClip clip, float volume = 1f)
