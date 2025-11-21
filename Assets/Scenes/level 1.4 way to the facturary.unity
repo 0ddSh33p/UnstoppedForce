@@ -5598,8 +5598,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32cf930d1b8628246bdd8fb2bf8245cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: level 1.4 way to the facturary
-  spawnPointNameInNextScene: SP1.4
+  sceneToLoad: 2.1 factory
+  spawnPointNameInNextScene: SP2.1
 --- !u!61 &1245280755
 BoxCollider2D:
   m_ObjectHideFlags: 0
