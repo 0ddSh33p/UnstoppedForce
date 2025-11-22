@@ -17,6 +17,11 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private AudioClip footstepClip;
     [SerializeField] private AudioClip swordSwingClip;
     [SerializeField] private AudioClip dashClip;
+    [SerializeField] private AudioClip momentum50Clip;
+    [SerializeField] private AudioClip momentum100Clip;
+    private bool hasPlayed50 = false;
+    private bool hasPlayed100 = false;
+
     private bool isWalking;    
 
     //internal vars
@@ -270,6 +275,9 @@ public class PlayerController : MonoBehaviour
         }
 
         momentum -= momentum * momentumDecayRate * Time.deltaTime;
+        if (momentum < 50) hasPlayed50 = false;
+        if (momentum < 100) hasPlayed100 = false;
+
         momentumBarUI.setMomentum(momentum, maxMomentum);
         if (BGMManager.Instance != null)
             BGMManager.Instance.UpdateMomentum(momentum);
@@ -280,6 +288,20 @@ public class PlayerController : MonoBehaviour
     {
         momentum += dm;
         momentum = Mathf.Clamp(momentum, 0, 100);
+
+        //plays sound effects at momentum 50 and 100
+        if (momentum >= 50 && !hasPlayed50)
+        {
+            PlaySFX(momentum50Clip);
+            hasPlayed50 = true;
+        }
+
+        if (momentum >= 100 && !hasPlayed100)
+        {
+            PlaySFX(momentum100Clip, 1f);
+            hasPlayed100 = true;
+        }
+
         momentumBarUI.setMomentum(momentum, maxMomentum);
         if (BGMManager.Instance != null)
             BGMManager.Instance.UpdateMomentum(momentum);

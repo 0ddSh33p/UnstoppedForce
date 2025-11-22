@@ -595,6 +595,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1725975451727604325, guid: 1c3ecf664b2a6c545b1c2105e2ca5220, type: 3}
+      propertyPath: GuideManager
+      value: 
+      objectReference: {fileID: 802208165}
     - target: {fileID: 1987519273502790073, guid: 1c3ecf664b2a6c545b1c2105e2ca5220, type: 3}
       propertyPath: m_LocalPosition.x
       value: 8.48
@@ -669,7 +673,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 526045315}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -678,7 +682,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 53, y: -183}
+  m_AnchoredPosition: {x: 30.416687, y: -166.66664}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &526045317
@@ -882,6 +886,54 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1c3ecf664b2a6c545b1c2105e2ca5220, type: 3}
+--- !u!1 &802208164
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 802208166}
+  - component: {fileID: 802208165}
+  m_Layer: 0
+  m_Name: GuideManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &802208165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 802208164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae3d8c4966a14c64eb2e292b3ef67512, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TextGuideManager
+  guideText: {fileID: 526045317}
+  guideSteps:
+  - Human detected. Eliminate.
+  - Target Neutralized. Momentum gained. Dash enabled.
+--- !u!4 &802208166
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 802208164}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 960.1652, y: 483.3255, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &866620488
 GameObject:
   m_ObjectHideFlags: 0
@@ -941,6 +993,7 @@ GameObject:
   - component: {fileID: 1274278203}
   - component: {fileID: 1274278202}
   - component: {fileID: 1274278201}
+  - component: {fileID: 1274278205}
   m_Layer: 5
   m_Name: guide
   m_TagString: Untagged
@@ -1031,6 +1084,22 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1274278205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1274278200}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae3d8c4966a14c64eb2e292b3ef67512, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TextGuideManager
+  guideText: {fileID: 526045317}
+  guideSteps:
+  - Human detected. Eliminate.
+  - Target Neutralized. Momentum gained. Dash enabled.
 --- !u!1 &1308657756 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5255573438812478713, guid: de26bdb78313e1045a97e6d6340a39a7, type: 3}
@@ -1256,9 +1325,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2126899862}
     - target: {fileID: 4978392811827577194, guid: de26bdb78313e1045a97e6d6340a39a7, type: 3}
+      propertyPath: momentum50Clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 916d695f7e413ca4bb6f1fbb7329fd62, type: 3}
+    - target: {fileID: 4978392811827577194, guid: de26bdb78313e1045a97e6d6340a39a7, type: 3}
       propertyPath: swordSwingClip
       value: 
       objectReference: {fileID: 8300000, guid: a21ea7f7cd1bf4440b45a3a1e94614e4, type: 3}
+    - target: {fileID: 4978392811827577194, guid: de26bdb78313e1045a97e6d6340a39a7, type: 3}
+      propertyPath: momentum100Clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 6288cf17ebac4664d97383989ebfc13a, type: 3}
     - target: {fileID: 5255573438812478713, guid: de26bdb78313e1045a97e6d6340a39a7, type: 3}
       propertyPath: m_Name
       value: Player
@@ -14976,6 +15053,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1308657756}
   smoothingTime: 0.1
+  offset: {x: 0, y: 3, z: 0}
 --- !u!1 &2126899860
 GameObject:
   m_ObjectHideFlags: 0
@@ -15114,8 +15192,12 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1932940555124742715, guid: 96231ae83c7f2ff48957578293d75ef1, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 152
+      objectReference: {fileID: 0}
+    - target: {fileID: 1932940555124742715, guid: 96231ae83c7f2ff48957578293d75ef1, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -194
+      value: -193.5
       objectReference: {fileID: 0}
     - target: {fileID: 3550712166967354035, guid: 96231ae83c7f2ff48957578293d75ef1, type: 3}
       propertyPath: m_Name
@@ -15233,3 +15315,4 @@ SceneRoots:
   - {fileID: 242999032}
   - {fileID: 6591218531170478676}
   - {fileID: 1274278204}
+  - {fileID: 802208166}

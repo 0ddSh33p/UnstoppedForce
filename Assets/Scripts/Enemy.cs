@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+    public TextGuideManager GuideManager;
     private float health;
     public float maxHealth = 10;
     public float momentumGain;
@@ -164,6 +165,7 @@ public class Enemy : MonoBehaviour
         {
             player.GetComponent<PlayerController>().increaseMomentum(momentumGain);
             Destroy(gameObject);
+            GuideManager.NextStep();
         }
         Debug.Log(name + " " + health);
     }
