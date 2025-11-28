@@ -3,8 +3,8 @@ guid: 1984656734c506c4c9e710346c30add9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1451750579205879962
-    second: Homescreen2_0
+      213: 2291922060729143471
+    second: homescreen2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Homescreen2_0
+      name: homescreen2_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1920
-        height: 1080
+        width: 1280
+        height: 720
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 66747f73a885adbe0800000000000000
-      internalID: -1451750579205879962
+      spriteID: fa054aa98fa8ecf10800000000000000
+      internalID: 2291922060729143471
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Homescreen2_0: -1451750579205879962
+      homescreen2_0: 2291922060729143471
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
