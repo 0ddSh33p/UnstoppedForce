@@ -4,6 +4,7 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     public TextGuideManager GuideManager;
+    public bool triggerGuideOnDeath = false;
     private float health;
     public float maxHealth = 10;
     public float momentumGain;
@@ -162,8 +163,11 @@ public class Enemy : MonoBehaviour
         if (health <= 0)
         {
             player.GetComponent<PlayerController>().increaseMomentum(momentumGain);
+            if (triggerGuideOnDeath && GuideManager != null)
+            {
+                GuideManager.NextStep();
+            }
             Destroy(gameObject);
-            GuideManager.NextStep();
         }
         Debug.Log(name + " " + health);
     }
