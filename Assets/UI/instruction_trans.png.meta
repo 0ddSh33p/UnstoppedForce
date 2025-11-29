@@ -1,0 +1,3354 @@
+fileFormatVersion: 2
+guid: dc5822afe0c69c544b850e83dcdecf5a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7690622252694529607
+    second: instruction_trans_0
+  - first:
+      213: -1547486501061037224
+    second: instruction_trans_1
+  - first:
+      213: -7515519585357679743
+    second: instruction_trans_2
+  - first:
+      213: 5971028430087469352
+    second: instruction_trans_3
+  - first:
+      213: 7371719025854505409
+    second: instruction_trans_4
+  - first:
+      213: 6557388723629650824
+    second: instruction_trans_5
+  - first:
+      213: 2217829318247969945
+    second: instruction_trans_6
+  - first:
+      213: -7775817569385863158
+    second: instruction_trans_7
+  - first:
+      213: 7826955057893145876
+    second: instruction_trans_8
+  - first:
+      213: 7967984185591897008
+    second: instruction_trans_9
+  - first:
+      213: 5772118488921653109
+    second: instruction_trans_10
+  - first:
+      213: 2627487298688711315
+    second: instruction_trans_11
+  - first:
+      213: 1796043829972206750
+    second: instruction_trans_12
+  - first:
+      213: 4327418231283271479
+    second: instruction_trans_13
+  - first:
+      213: -6328303167210536263
+    second: instruction_trans_14
+  - first:
+      213: 4871332910000429697
+    second: instruction_trans_15
+  - first:
+      213: 6546686936602511936
+    second: instruction_trans_16
+  - first:
+      213: 7365511457950493816
+    second: instruction_trans_17
+  - first:
+      213: -7919611926542442222
+    second: instruction_trans_18
+  - first:
+      213: -6875590631461517188
+    second: instruction_trans_19
+  - first:
+      213: 2035854934988002914
+    second: instruction_trans_20
+  - first:
+      213: -3345772196461423045
+    second: instruction_trans_21
+  - first:
+      213: 5069508936784249665
+    second: instruction_trans_22
+  - first:
+      213: 909706036460936241
+    second: instruction_trans_23
+  - first:
+      213: 3345842494350588191
+    second: instruction_trans_24
+  - first:
+      213: -4988431458070092220
+    second: instruction_trans_25
+  - first:
+      213: -2221413823012355050
+    second: instruction_trans_26
+  - first:
+      213: 6864481366693950371
+    second: instruction_trans_27
+  - first:
+      213: -5928185210362550182
+    second: instruction_trans_28
+  - first:
+      213: -2990427254138202227
+    second: instruction_trans_29
+  - first:
+      213: -4450286449968520909
+    second: instruction_trans_30
+  - first:
+      213: 6920292614987375013
+    second: instruction_trans_31
+  - first:
+      213: -3491936724860860618
+    second: instruction_trans_32
+  - first:
+      213: 7703290545426078393
+    second: instruction_trans_33
+  - first:
+      213: -6375835276550379459
+    second: instruction_trans_34
+  - first:
+      213: 733854463904169838
+    second: instruction_trans_35
+  - first:
+      213: 8322019147199901872
+    second: instruction_trans_36
+  - first:
+      213: -4354645546492115612
+    second: instruction_trans_37
+  - first:
+      213: 6767237967630281830
+    second: instruction_trans_38
+  - first:
+      213: -753213846984950368
+    second: instruction_trans_39
+  - first:
+      213: -2659440364886390703
+    second: instruction_trans_40
+  - first:
+      213: 4282433161293632635
+    second: instruction_trans_41
+  - first:
+      213: -2040823943163365847
+    second: instruction_trans_42
+  - first:
+      213: -3834412777816602640
+    second: instruction_trans_43
+  - first:
+      213: 3315878229941692273
+    second: instruction_trans_44
+  - first:
+      213: 7614025379582329554
+    second: instruction_trans_45
+  - first:
+      213: 2865012376122857710
+    second: instruction_trans_46
+  - first:
+      213: -8892687491903358092
+    second: instruction_trans_47
+  - first:
+      213: 5691570216986774149
+    second: instruction_trans_48
+  - first:
+      213: 7835360674587328249
+    second: instruction_trans_49
+  - first:
+      213: -4724248878680142626
+    second: instruction_trans_50
+  - first:
+      213: 2853629955405168630
+    second: instruction_trans_51
+  - first:
+      213: -127189024959833269
+    second: instruction_trans_52
+  - first:
+      213: -8970221235202240353
+    second: instruction_trans_53
+  - first:
+      213: -4667450878274432119
+    second: instruction_trans_54
+  - first:
+      213: 5538057625558870204
+    second: instruction_trans_55
+  - first:
+      213: -953470113146558902
+    second: instruction_trans_56
+  - first:
+      213: -338073804846840831
+    second: instruction_trans_57
+  - first:
+      213: 8372294914920299703
+    second: instruction_trans_58
+  - first:
+      213: -6972098283972961123
+    second: instruction_trans_59
+  - first:
+      213: -199969552292864413
+    second: instruction_trans_60
+  - first:
+      213: -3999083702312507674
+    second: instruction_trans_61
+  - first:
+      213: -9196187109381059280
+    second: instruction_trans_62
+  - first:
+      213: 8536631502366851302
+    second: instruction_trans_63
+  - first:
+      213: 5469245188894884475
+    second: instruction_trans_64
+  - first:
+      213: 3689862697269106054
+    second: instruction_trans_65
+  - first:
+      213: 2286476874307779150
+    second: instruction_trans_66
+  - first:
+      213: 3227507732488262843
+    second: instruction_trans_67
+  - first:
+      213: 7032631177584894484
+    second: instruction_trans_68
+  - first:
+      213: 5231565177145603878
+    second: instruction_trans_69
+  - first:
+      213: 1771661861460820572
+    second: instruction_trans_70
+  - first:
+      213: -5266325179211934593
+    second: instruction_trans_71
+  - first:
+      213: -1332953275464669699
+    second: instruction_trans_72
+  - first:
+      213: -3733232628988660723
+    second: instruction_trans_73
+  - first:
+      213: 3137530727674775022
+    second: instruction_trans_74
+  - first:
+      213: 9027763608644711004
+    second: instruction_trans_75
+  - first:
+      213: 6278376309185818426
+    second: instruction_trans_76
+  - first:
+      213: -5110932202778855166
+    second: instruction_trans_77
+  - first:
+      213: 1013120290880707721
+    second: instruction_trans_78
+  - first:
+      213: -6862180558484595020
+    second: instruction_trans_79
+  - first:
+      213: 7378994116113923710
+    second: instruction_trans_80
+  - first:
+      213: -334601778816614749
+    second: instruction_trans_81
+  - first:
+      213: 3825355908207550564
+    second: instruction_trans_82
+  - first:
+      213: 8652000855769800450
+    second: instruction_trans_83
+  - first:
+      213: 3642462014527863966
+    second: instruction_trans_84
+  - first:
+      213: -756684979242219672
+    second: instruction_trans_85
+  - first:
+      213: 3665089399812621990
+    second: instruction_trans_86
+  - first:
+      213: -7133829122858504870
+    second: instruction_trans_87
+  - first:
+      213: -5279724638956477909
+    second: instruction_trans_88
+  - first:
+      213: -5773886001246581302
+    second: instruction_trans_89
+  - first:
+      213: -7411568901002163391
+    second: instruction_trans_90
+  - first:
+      213: -1475977696755880049
+    second: instruction_trans_91
+  - first:
+      213: 8713742179049225380
+    second: instruction_trans_92
+  - first:
+      213: 7147511688390584459
+    second: instruction_trans_93
+  - first:
+      213: -8819890406161477970
+    second: instruction_trans_94
+  - first:
+      213: -7983769069387514969
+    second: instruction_trans_95
+  - first:
+      213: -6754670180823471613
+    second: instruction_trans_96
+  - first:
+      213: -7089126429696501310
+    second: instruction_trans_97
+  - first:
+      213: 2433952012433007465
+    second: instruction_trans_98
+  - first:
+      213: -8846922660809647333
+    second: instruction_trans_99
+  - first:
+      213: 2834750158093591974
+    second: instruction_trans_100
+  - first:
+      213: -214784222551078614
+    second: instruction_trans_101
+  - first:
+      213: 3442235463020876492
+    second: instruction_trans_102
+  - first:
+      213: 300802870290392869
+    second: instruction_trans_103
+  - first:
+      213: -5400920433435566295
+    second: instruction_trans_104
+  - first:
+      213: 1514621889783303787
+    second: instruction_trans_105
+  - first:
+      213: -2919642493953109344
+    second: instruction_trans_106
+  - first:
+      213: -1812755444171870539
+    second: instruction_trans_107
+  - first:
+      213: 661758272190524812
+    second: instruction_trans_108
+  - first:
+      213: 9147244440733982642
+    second: instruction_trans_109
+  - first:
+      213: 5678778717716284806
+    second: instruction_trans_110
+  - first:
+      213: -5540420137587815793
+    second: instruction_trans_111
+  - first:
+      213: 9099482703417959275
+    second: instruction_trans_112
+  - first:
+      213: -3819455243710901189
+    second: instruction_trans_113
+  - first:
+      213: -3690908052778498426
+    second: instruction_trans_114
+  - first:
+      213: 7748029837025667579
+    second: instruction_trans_115
+  - first:
+      213: 9101486887968505597
+    second: instruction_trans_116
+  - first:
+      213: -2402880546811167694
+    second: instruction_trans_117
+  - first:
+      213: -8510196580323516696
+    second: instruction_trans_118
+  - first:
+      213: 3631133620392104028
+    second: instruction_trans_119
+  - first:
+      213: -4167726195365384855
+    second: instruction_trans_120
+  - first:
+      213: 5999885089246664314
+    second: instruction_trans_121
+  - first:
+      213: 1177787065452817148
+    second: instruction_trans_122
+  - first:
+      213: -6880543989983087819
+    second: instruction_trans_123
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: instruction_trans_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 711
+        width: 13213
+        height: 7606
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 746629131349aba60800000000000000
+      internalID: 7690622252694529607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_1
+      rect:
+        serializedVersion: 2
+        x: 9154
+        y: 7521
+        width: 777
+        height: 796
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8537b89e939368ae0800000000000000
+      internalID: -1547486501061037224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_2
+      rect:
+        serializedVersion: 2
+        x: 11710
+        y: 6687
+        width: 881
+        height: 1495
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 183b34c81c283b790800000000000000
+      internalID: -7515519585357679743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_3
+      rect:
+        serializedVersion: 2
+        x: 2921
+        y: 6639
+        width: 88
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8293f17a8ba5dd250800000000000000
+      internalID: 5971028430087469352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_4
+      rect:
+        serializedVersion: 2
+        x: 3016
+        y: 6639
+        width: 44
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c1eb00a56b9d4660800000000000000
+      internalID: 7371719025854505409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_5
+      rect:
+        serializedVersion: 2
+        x: 3062
+        y: 6639
+        width: 45
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 883f8163d46800b50800000000000000
+      internalID: 6557388723629650824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_6
+      rect:
+        serializedVersion: 2
+        x: 3109
+        y: 6639
+        width: 44
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 994fd9ea30057ce10800000000000000
+      internalID: 2217829318247969945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_7
+      rect:
+        serializedVersion: 2
+        x: 3159
+        y: 6638
+        width: 69
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a08a3826e1fb61490800000000000000
+      internalID: -7775817569385863158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_8
+      rect:
+        serializedVersion: 2
+        x: 3239
+        y: 6638
+        width: 82
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41dfaaaf72eee9c60800000000000000
+      internalID: 7826955057893145876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_9
+      rect:
+        serializedVersion: 2
+        x: 3360
+        y: 6638
+        width: 73
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bb922e8667f39e60800000000000000
+      internalID: 7967984185591897008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_10
+      rect:
+        serializedVersion: 2
+        x: 3438
+        y: 6638
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57fb3a50f2faa1050800000000000000
+      internalID: 5772118488921653109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_11
+      rect:
+        serializedVersion: 2
+        x: 3523
+        y: 6638
+        width: 59
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39af032f6c5b67420800000000000000
+      internalID: 2627487298688711315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_12
+      rect:
+        serializedVersion: 2
+        x: 3618
+        y: 6638
+        width: 132
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e948686f854dce810800000000000000
+      internalID: 1796043829972206750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_13
+      rect:
+        serializedVersion: 2
+        x: 3758
+        y: 6638
+        width: 73
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 737403624f31e0c30800000000000000
+      internalID: 4327418231283271479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_14
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 6639
+        width: 122
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b2cf675cc95d28a0800000000000000
+      internalID: -6328303167210536263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_15
+      rect:
+        serializedVersion: 2
+        x: 3967
+        y: 6638
+        width: 68
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18ade33e8737a9340800000000000000
+      internalID: 4871332910000429697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_16
+      rect:
+        serializedVersion: 2
+        x: 4045
+        y: 6639
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04a02ef35118ada50800000000000000
+      internalID: 6546686936602511936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_17
+      rect:
+        serializedVersion: 2
+        x: 4130
+        y: 6638
+        width: 59
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87c653895ad873660800000000000000
+      internalID: 7365511457950493816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_18
+      rect:
+        serializedVersion: 2
+        x: 4190
+        y: 6638
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 211ad77a9e2e71290800000000000000
+      internalID: -7919611926542442222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_19
+      rect:
+        serializedVersion: 2
+        x: 4279
+        y: 6639
+        width: 122
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c788bb6cfbef490a0800000000000000
+      internalID: -6875590631461517188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_20
+      rect:
+        serializedVersion: 2
+        x: 4435
+        y: 6638
+        width: 82
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2669f26e64fc04c10800000000000000
+      internalID: 2035854934988002914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_21
+      rect:
+        serializedVersion: 2
+        x: 4527
+        y: 6638
+        width: 76
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b36d98af9ed6191d0800000000000000
+      internalID: -3345772196461423045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_22
+      rect:
+        serializedVersion: 2
+        x: 4606
+        y: 6639
+        width: 67
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14381b2c4838a5640800000000000000
+      internalID: 5069508936784249665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_23
+      rect:
+        serializedVersion: 2
+        x: 4704
+        y: 6638
+        width: 60
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13c584102dcef9c00800000000000000
+      internalID: 909706036460936241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_24
+      rect:
+        serializedVersion: 2
+        x: 4767
+        y: 6638
+        width: 73
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f197c268502de6e20800000000000000
+      internalID: 3345842494350588191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_25
+      rect:
+        serializedVersion: 2
+        x: 4884
+        y: 6638
+        width: 69
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 446295bc40885cab0800000000000000
+      internalID: -4988431458070092220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_26
+      rect:
+        serializedVersion: 2
+        x: 4962
+        y: 6639
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 614c434c5e3fb21e0800000000000000
+      internalID: -2221413823012355050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_27
+      rect:
+        serializedVersion: 2
+        x: 5052
+        y: 6638
+        width: 75
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a3b415fe69834f50800000000000000
+      internalID: 6864481366693950371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_28
+      rect:
+        serializedVersion: 2
+        x: 5127
+        y: 6638
+        width: 82
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a58ad95c5fadabda0800000000000000
+      internalID: -5928185210362550182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_29
+      rect:
+        serializedVersion: 2
+        x: 5216
+        y: 6639
+        width: 44
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d87127e914edf76d0800000000000000
+      internalID: -2990427254138202227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_30
+      rect:
+        serializedVersion: 2
+        x: 5266
+        y: 6638
+        width: 68
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33164e86d086d32c0800000000000000
+      internalID: -4450286449968520909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_31
+      rect:
+        serializedVersion: 2
+        x: 5376
+        y: 6638
+        width: 103
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a1e412d771d90060800000000000000
+      internalID: 6920292614987375013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_32
+      rect:
+        serializedVersion: 2
+        x: 5488
+        y: 6638
+        width: 76
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6370780cc062a8fc0800000000000000
+      internalID: -3491936724860860618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_33
+      rect:
+        serializedVersion: 2
+        x: 5570
+        y: 6638
+        width: 57
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ba1fb1ffe597ea60800000000000000
+      internalID: 7703290545426078393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_34
+      rect:
+        serializedVersion: 2
+        x: 5632
+        y: 6639
+        width: 86
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d386fcab89b7487a0800000000000000
+      internalID: -6375835276550379459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_35
+      rect:
+        serializedVersion: 2
+        x: 8230
+        y: 6521
+        width: 777
+        height: 797
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6fb7dd2fbc2f2a00800000000000000
+      internalID: 733854463904169838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_36
+      rect:
+        serializedVersion: 2
+        x: 9154
+        y: 6521
+        width: 777
+        height: 797
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b079da8250cd7370800000000000000
+      internalID: 8322019147199901872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_37
+      rect:
+        serializedVersion: 2
+        x: 10078
+        y: 6521
+        width: 777
+        height: 797
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 465c99682f03193c0800000000000000
+      internalID: -4354645546492115612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_38
+      rect:
+        serializedVersion: 2
+        x: 9235
+        y: 5997
+        width: 220
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66ca323c31f0aed50800000000000000
+      internalID: 6767237967630281830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_39
+      rect:
+        serializedVersion: 2
+        x: 9468
+        y: 5996
+        width: 121
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ad7e823ffb0c85f0800000000000000
+      internalID: -753213846984950368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_40
+      rect:
+        serializedVersion: 2
+        x: 9595
+        y: 5998
+        width: 130
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1588c951415c71bd0800000000000000
+      internalID: -2659440364886390703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_41
+      rect:
+        serializedVersion: 2
+        x: 9731
+        y: 5996
+        width: 114
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b74924955424e6b30800000000000000
+      internalID: 4282433161293632635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_42
+      rect:
+        serializedVersion: 2
+        x: 11751
+        y: 5999
+        width: 188
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 926b2aabf698da3e0800000000000000
+      internalID: -2040823943163365847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_43
+      rect:
+        serializedVersion: 2
+        x: 11936
+        y: 5997
+        width: 98
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f7c508e4ed69cac0800000000000000
+      internalID: -3834412777816602640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_44
+      rect:
+        serializedVersion: 2
+        x: 12035
+        y: 5997
+        width: 97
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 177202e8ead540e20800000000000000
+      internalID: 3315878229941692273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_45
+      rect:
+        serializedVersion: 2
+        x: 12142
+        y: 5997
+        width: 123
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d240dcedb37aa960800000000000000
+      internalID: 7614025379582329554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_46
+      rect:
+        serializedVersion: 2
+        x: 12275
+        y: 5997
+        width: 109
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee896eb939192c720800000000000000
+      internalID: 2865012376122857710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_47
+      rect:
+        serializedVersion: 2
+        x: 12396
+        y: 5999
+        width: 73
+        height: 177
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47b7a8277d3d69480800000000000000
+      internalID: -8892687491903358092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_48
+      rect:
+        serializedVersion: 2
+        x: 12456
+        y: 5999
+        width: 83
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58a80b505f48cfe40800000000000000
+      internalID: 5691570216986774149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_49
+      rect:
+        serializedVersion: 2
+        x: 11423
+        y: 5072
+        width: 1000
+        height: 618
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9feb7df150bccbc60800000000000000
+      internalID: 7835360674587328249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_50
+      rect:
+        serializedVersion: 2
+        x: 11911
+        y: 4039
+        width: 930
+        height: 1122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edc8bbbcca8107eb0800000000000000
+      internalID: -4724248878680142626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_51
+      rect:
+        serializedVersion: 2
+        x: 12641
+        y: 4821
+        width: 313
+        height: 198
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ffb65443512a9720800000000000000
+      internalID: 2853629955405168630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_52
+      rect:
+        serializedVersion: 2
+        x: 1913
+        y: 4636
+        width: 123
+        height: 169
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4bd0f371422c3ef0800000000000000
+      internalID: -127189024959833269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_53
+      rect:
+        serializedVersion: 2
+        x: 2326
+        y: 4771
+        width: 48
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f90da17105f538380800000000000000
+      internalID: -8970221235202240353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_54
+      rect:
+        serializedVersion: 2
+        x: 2540
+        y: 4639
+        width: 98
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9831ed9c722e93fb0800000000000000
+      internalID: -4667450878274432119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_55
+      rect:
+        serializedVersion: 2
+        x: 8443
+        y: 4015
+        width: 777
+        height: 797
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb8641d81122bdc40800000000000000
+      internalID: 5538057625558870204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_56
+      rect:
+        serializedVersion: 2
+        x: 9883
+        y: 4015
+        width: 777
+        height: 797
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a46a2f9dbf794c2f0800000000000000
+      internalID: -953470113146558902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_57
+      rect:
+        serializedVersion: 2
+        x: 2051
+        y: 4590
+        width: 135
+        height: 165
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1044d3a6aabee4bf0800000000000000
+      internalID: -338073804846840831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_58
+      rect:
+        serializedVersion: 2
+        x: 2203
+        y: 4641
+        width: 109
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bc32a6eddd503470800000000000000
+      internalID: 8372294914920299703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_59
+      rect:
+        serializedVersion: 2
+        x: 2317
+        y: 4641
+        width: 73
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9c5eacec812e3f90800000000000000
+      internalID: -6972098283972961123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_60
+      rect:
+        serializedVersion: 2
+        x: 2399
+        y: 4641
+        width: 140
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36e90bd60c0993df0800000000000000
+      internalID: -199969552292864413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_61
+      rect:
+        serializedVersion: 2
+        x: 3644
+        y: 4506
+        width: 188
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e6eb909f866088c0800000000000000
+      internalID: -3999083702312507674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_62
+      rect:
+        serializedVersion: 2
+        x: 3829
+        y: 4504
+        width: 98
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03dc0592c84906080800000000000000
+      internalID: -9196187109381059280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_63
+      rect:
+        serializedVersion: 2
+        x: 3928
+        y: 4504
+        width: 97
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e04cf45f15387670800000000000000
+      internalID: 8536631502366851302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_64
+      rect:
+        serializedVersion: 2
+        x: 4289
+        y: 4506
+        width: 73
+        height: 177
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b720891a589a6eb40800000000000000
+      internalID: 5469245188894884475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_65
+      rect:
+        serializedVersion: 2
+        x: 11719
+        y: 4359
+        width: 108
+        height: 350
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68590bcc296053330800000000000000
+      internalID: 3689862697269106054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_66
+      rect:
+        serializedVersion: 2
+        x: 1632
+        y: 1276
+        width: 4630
+        height: 3266
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4ab2485a923bbf10800000000000000
+      internalID: 2286476874307779150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_67
+      rect:
+        serializedVersion: 2
+        x: 4035
+        y: 4504
+        width: 123
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb41ac0ce296acc20800000000000000
+      internalID: 3227507732488262843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_68
+      rect:
+        serializedVersion: 2
+        x: 4168
+        y: 4504
+        width: 109
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 412e848abcce89160800000000000000
+      internalID: 7032631177584894484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_69
+      rect:
+        serializedVersion: 2
+        x: 4349
+        y: 4506
+        width: 83
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62731138fc04a9840800000000000000
+      internalID: 5231565177145603878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_70
+      rect:
+        serializedVersion: 2
+        x: 5314
+        y: 4466
+        width: 83
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c52ca7a8315369810800000000000000
+      internalID: 1771661861460820572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_71
+      rect:
+        serializedVersion: 2
+        x: 5409
+        y: 4466
+        width: 141
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f749065d6214ae6b0800000000000000
+      internalID: -5266325179211934593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_72
+      rect:
+        serializedVersion: 2
+        x: 5551
+        y: 4464
+        width: 97
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df52cb9ee06608de0800000000000000
+      internalID: -1332953275464669699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_73
+      rect:
+        serializedVersion: 2
+        x: 5656
+        y: 4464
+        width: 112
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d04bb3514b4e03cc0800000000000000
+      internalID: -3733232628988660723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_74
+      rect:
+        serializedVersion: 2
+        x: 5785
+        y: 4466
+        width: 109
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee58deec29fba8b20800000000000000
+      internalID: 3137530727674775022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_75
+      rect:
+        serializedVersion: 2
+        x: 5897
+        y: 4464
+        width: 124
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c527771cb2f094d70800000000000000
+      internalID: 9027763608644711004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_76
+      rect:
+        serializedVersion: 2
+        x: 6031
+        y: 4464
+        width: 109
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3faf3b2df5412750800000000000000
+      internalID: 6278376309185818426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_77
+      rect:
+        serializedVersion: 2
+        x: 6148
+        y: 4464
+        width: 98
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 209f24e8d325219b0800000000000000
+      internalID: -5110932202778855166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_78
+      rect:
+        serializedVersion: 2
+        x: 1285
+        y: 3708
+        width: 218
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98c5fac69835f0e00800000000000000
+      internalID: 1013120290880707721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_79
+      rect:
+        serializedVersion: 2
+        x: 1518
+        y: 3707
+        width: 119
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4be1fe2b323a4c0a0800000000000000
+      internalID: -6862180558484595020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_80
+      rect:
+        serializedVersion: 2
+        x: 8375
+        y: 3492
+        width: 87
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7efaa29d04776660800000000000000
+      internalID: 7378994116113923710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_81
+      rect:
+        serializedVersion: 2
+        x: 8471
+        y: 3492
+        width: 143
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3aefb6874714b5bf0800000000000000
+      internalID: -334601778816614749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_82
+      rect:
+        serializedVersion: 2
+        x: 8613
+        y: 3490
+        width: 100
+        height: 152
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46027205ee4661530800000000000000
+      internalID: 3825355908207550564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_83
+      rect:
+        serializedVersion: 2
+        x: 8718
+        y: 3490
+        width: 114
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20fd88420f4121870800000000000000
+      internalID: 8652000855769800450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_84
+      rect:
+        serializedVersion: 2
+        x: 8847
+        y: 3492
+        width: 111
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9c79c357ef9c8230800000000000000
+      internalID: 3642462014527863966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_85
+      rect:
+        serializedVersion: 2
+        x: 8959
+        y: 3490
+        width: 126
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 867c46d3507bf75f0800000000000000
+      internalID: -756684979242219672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_86
+      rect:
+        serializedVersion: 2
+        x: 9093
+        y: 3490
+        width: 111
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a681e104630dd230800000000000000
+      internalID: 3665089399812621990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_87
+      rect:
+        serializedVersion: 2
+        x: 9210
+        y: 3490
+        width: 100
+        height: 152
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5daeab953c8ffc90800000000000000
+      internalID: -7133829122858504870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_88
+      rect:
+        serializedVersion: 2
+        x: 9864
+        y: 3488
+        width: 153
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b222f1ff966aab6b0800000000000000
+      internalID: -5279724638956477909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_89
+      rect:
+        serializedVersion: 2
+        x: 10029
+        y: 3492
+        width: 110
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acdc812f5490fdfa0800000000000000
+      internalID: -5773886001246581302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_90
+      rect:
+        serializedVersion: 2
+        x: 10143
+        y: 3490
+        width: 121
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14b0f6b4a51d42990800000000000000
+      internalID: -7411568901002163391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_91
+      rect:
+        serializedVersion: 2
+        x: 10272
+        y: 3489
+        width: 142
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8f6778da16448be0800000000000000
+      internalID: -1475977696755880049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_92
+      rect:
+        serializedVersion: 2
+        x: 10424
+        y: 3490
+        width: 111
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ac319e285e6de870800000000000000
+      internalID: 8713742179049225380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_93
+      rect:
+        serializedVersion: 2
+        x: 10545
+        y: 3492
+        width: 143
+        height: 179
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b88297ee200113360800000000000000
+      internalID: 7147511688390584459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_94
+      rect:
+        serializedVersion: 2
+        x: 11918
+        y: 3489
+        width: 148
+        height: 164
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eae8ed6c764799580800000000000000
+      internalID: -8819890406161477970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_95
+      rect:
+        serializedVersion: 2
+        x: 12083
+        y: 3491
+        width: 119
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7abf76ac454f33190800000000000000
+      internalID: -7983769069387514969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_96
+      rect:
+        serializedVersion: 2
+        x: 12222
+        y: 3491
+        width: 119
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30ae71122479242a0800000000000000
+      internalID: -6754670180823471613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_97
+      rect:
+        serializedVersion: 2
+        x: 12353
+        y: 3493
+        width: 72
+        height: 177
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c95b1e621d5e9d90800000000000000
+      internalID: -7089126429696501310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_98
+      rect:
+        serializedVersion: 2
+        x: 12412
+        y: 3493
+        width: 84
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 963aa6da57227c120800000000000000
+      internalID: 2433952012433007465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_99
+      rect:
+        serializedVersion: 2
+        x: 6222
+        y: 3126
+        width: 150
+        height: 168
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1b561786ba693580800000000000000
+      internalID: -8846922660809647333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_100
+      rect:
+        serializedVersion: 2
+        x: 6387
+        y: 3130
+        width: 108
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a5a628ef3e075720800000000000000
+      internalID: 2834750158093591974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_101
+      rect:
+        serializedVersion: 2
+        x: 6501
+        y: 3128
+        width: 119
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a290c7733eee40df0800000000000000
+      internalID: -214784222551078614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_102
+      rect:
+        serializedVersion: 2
+        x: 6630
+        y: 3127
+        width: 140
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc29c967ae645cf20800000000000000
+      internalID: 3442235463020876492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_103
+      rect:
+        serializedVersion: 2
+        x: 6782
+        y: 3128
+        width: 109
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 527a317ed9aac2400800000000000000
+      internalID: 300802870290392869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_104
+      rect:
+        serializedVersion: 2
+        x: 6903
+        y: 3130
+        width: 140
+        height: 177
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92f9ce82b731c05b0800000000000000
+      internalID: -5400920433435566295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_105
+      rect:
+        serializedVersion: 2
+        x: 6376
+        y: 2403
+        width: 84
+        height: 213
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6e809d7594050510800000000000000
+      internalID: 1514621889783303787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_106
+      rect:
+        serializedVersion: 2
+        x: 6467
+        y: 2453
+        width: 140
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a21ac4ee985b77d0800000000000000
+      internalID: -2919642493953109344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_107
+      rect:
+        serializedVersion: 2
+        x: 6616
+        y: 2456
+        width: 202
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5beea75278cc7d6e0800000000000000
+      internalID: -1812755444171870539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_108
+      rect:
+        serializedVersion: 2
+        x: 6826
+        y: 2405
+        width: 135
+        height: 165
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8da71574a90f2900800000000000000
+      internalID: 661758272190524812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_109
+      rect:
+        serializedVersion: 2
+        x: 8367
+        y: 1677
+        width: 1722
+        height: 797
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bf9d9bca5a81fe70800000000000000
+      internalID: 9147244440733982642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_110
+      rect:
+        serializedVersion: 2
+        x: 10474
+        y: 1677
+        width: 2739
+        height: 797
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 685078308231fce40800000000000000
+      internalID: 5678778717716284806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_111
+      rect:
+        serializedVersion: 2
+        x: 4246
+        y: 1200
+        width: 148
+        height: 164
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8a48a04d397c13b0800000000000000
+      internalID: -5540420137587815793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_112
+      rect:
+        serializedVersion: 2
+        x: 4411
+        y: 1202
+        width: 119
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b63e901ce4bd74e70800000000000000
+      internalID: 9099482703417959275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_113
+      rect:
+        serializedVersion: 2
+        x: 4550
+        y: 1202
+        width: 119
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b34db1331b19efac0800000000000000
+      internalID: -3819455243710901189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_114
+      rect:
+        serializedVersion: 2
+        x: 4681
+        y: 1204
+        width: 72
+        height: 177
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68642876ea247ccc0800000000000000
+      internalID: -3690908052778498426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_115
+      rect:
+        serializedVersion: 2
+        x: 4740
+        y: 1204
+        width: 84
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf9ea010618868b60800000000000000
+      internalID: 7748029837025667579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_116
+      rect:
+        serializedVersion: 2
+        x: 8936
+        y: 1140
+        width: 169
+        height: 164
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfefc355a1afe4e70800000000000000
+      internalID: 9101486887968505597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_117
+      rect:
+        serializedVersion: 2
+        x: 9123
+        y: 1140
+        width: 124
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23cbf99afd047aed0800000000000000
+      internalID: -2402880546811167694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_118
+      rect:
+        serializedVersion: 2
+        x: 9259
+        y: 1140
+        width: 93
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ee92159c45b5e980800000000000000
+      internalID: -8510196580323516696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_119
+      rect:
+        serializedVersion: 2
+        x: 9363
+        y: 1142
+        width: 140
+        height: 177
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5013770ac0646230800000000000000
+      internalID: 3631133620392104028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_120
+      rect:
+        serializedVersion: 2
+        x: 11532
+        y: 1089
+        width: 84
+        height: 213
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96de72c5b134926c0800000000000000
+      internalID: -4167726195365384855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_121
+      rect:
+        serializedVersion: 2
+        x: 11623
+        y: 1139
+        width: 140
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a76d5bd23bfd34350800000000000000
+      internalID: 5999885089246664314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_122
+      rect:
+        serializedVersion: 2
+        x: 11772
+        y: 1142
+        width: 202
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfa6d598817585010800000000000000
+      internalID: 1177787065452817148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instruction_trans_123
+      rect:
+        serializedVersion: 2
+        x: 11982
+        y: 1091
+        width: 135
+        height: 165
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 533fb9f12b56380a0800000000000000
+      internalID: -6880543989983087819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 719d36bc8fab4ea48a3d92b00e4405db
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      instruction_trans_0: 7690622252694529607
+      instruction_trans_1: -1547486501061037224
+      instruction_trans_10: 5772118488921653109
+      instruction_trans_100: 2834750158093591974
+      instruction_trans_101: -214784222551078614
+      instruction_trans_102: 3442235463020876492
+      instruction_trans_103: 300802870290392869
+      instruction_trans_104: -5400920433435566295
+      instruction_trans_105: 1514621889783303787
+      instruction_trans_106: -2919642493953109344
+      instruction_trans_107: -1812755444171870539
+      instruction_trans_108: 661758272190524812
+      instruction_trans_109: 9147244440733982642
+      instruction_trans_11: 2627487298688711315
+      instruction_trans_110: 5678778717716284806
+      instruction_trans_111: -5540420137587815793
+      instruction_trans_112: 9099482703417959275
+      instruction_trans_113: -3819455243710901189
+      instruction_trans_114: -3690908052778498426
+      instruction_trans_115: 7748029837025667579
+      instruction_trans_116: 9101486887968505597
+      instruction_trans_117: -2402880546811167694
+      instruction_trans_118: -8510196580323516696
+      instruction_trans_119: 3631133620392104028
+      instruction_trans_12: 1796043829972206750
+      instruction_trans_120: -4167726195365384855
+      instruction_trans_121: 5999885089246664314
+      instruction_trans_122: 1177787065452817148
+      instruction_trans_123: -6880543989983087819
+      instruction_trans_13: 4327418231283271479
+      instruction_trans_14: -6328303167210536263
+      instruction_trans_15: 4871332910000429697
+      instruction_trans_16: 6546686936602511936
+      instruction_trans_17: 7365511457950493816
+      instruction_trans_18: -7919611926542442222
+      instruction_trans_19: -6875590631461517188
+      instruction_trans_2: -7515519585357679743
+      instruction_trans_20: 2035854934988002914
+      instruction_trans_21: -3345772196461423045
+      instruction_trans_22: 5069508936784249665
+      instruction_trans_23: 909706036460936241
+      instruction_trans_24: 3345842494350588191
+      instruction_trans_25: -4988431458070092220
+      instruction_trans_26: -2221413823012355050
+      instruction_trans_27: 6864481366693950371
+      instruction_trans_28: -5928185210362550182
+      instruction_trans_29: -2990427254138202227
+      instruction_trans_3: 5971028430087469352
+      instruction_trans_30: -4450286449968520909
+      instruction_trans_31: 6920292614987375013
+      instruction_trans_32: -3491936724860860618
+      instruction_trans_33: 7703290545426078393
+      instruction_trans_34: -6375835276550379459
+      instruction_trans_35: 733854463904169838
+      instruction_trans_36: 8322019147199901872
+      instruction_trans_37: -4354645546492115612
+      instruction_trans_38: 6767237967630281830
+      instruction_trans_39: -753213846984950368
+      instruction_trans_4: 7371719025854505409
+      instruction_trans_40: -2659440364886390703
+      instruction_trans_41: 4282433161293632635
+      instruction_trans_42: -2040823943163365847
+      instruction_trans_43: -3834412777816602640
+      instruction_trans_44: 3315878229941692273
+      instruction_trans_45: 7614025379582329554
+      instruction_trans_46: 2865012376122857710
+      instruction_trans_47: -8892687491903358092
+      instruction_trans_48: 5691570216986774149
+      instruction_trans_49: 7835360674587328249
+      instruction_trans_5: 6557388723629650824
+      instruction_trans_50: -4724248878680142626
+      instruction_trans_51: 2853629955405168630
+      instruction_trans_52: -127189024959833269
+      instruction_trans_53: -8970221235202240353
+      instruction_trans_54: -4667450878274432119
+      instruction_trans_55: 5538057625558870204
+      instruction_trans_56: -953470113146558902
+      instruction_trans_57: -338073804846840831
+      instruction_trans_58: 8372294914920299703
+      instruction_trans_59: -6972098283972961123
+      instruction_trans_6: 2217829318247969945
+      instruction_trans_60: -199969552292864413
+      instruction_trans_61: -3999083702312507674
+      instruction_trans_62: -9196187109381059280
+      instruction_trans_63: 8536631502366851302
+      instruction_trans_64: 5469245188894884475
+      instruction_trans_65: 3689862697269106054
+      instruction_trans_66: 2286476874307779150
+      instruction_trans_67: 3227507732488262843
+      instruction_trans_68: 7032631177584894484
+      instruction_trans_69: 5231565177145603878
+      instruction_trans_7: -7775817569385863158
+      instruction_trans_70: 1771661861460820572
+      instruction_trans_71: -5266325179211934593
+      instruction_trans_72: -1332953275464669699
+      instruction_trans_73: -3733232628988660723
+      instruction_trans_74: 3137530727674775022
+      instruction_trans_75: 9027763608644711004
+      instruction_trans_76: 6278376309185818426
+      instruction_trans_77: -5110932202778855166
+      instruction_trans_78: 1013120290880707721
+      instruction_trans_79: -6862180558484595020
+      instruction_trans_8: 7826955057893145876
+      instruction_trans_80: 7378994116113923710
+      instruction_trans_81: -334601778816614749
+      instruction_trans_82: 3825355908207550564
+      instruction_trans_83: 8652000855769800450
+      instruction_trans_84: 3642462014527863966
+      instruction_trans_85: -756684979242219672
+      instruction_trans_86: 3665089399812621990
+      instruction_trans_87: -7133829122858504870
+      instruction_trans_88: -5279724638956477909
+      instruction_trans_89: -5773886001246581302
+      instruction_trans_9: 7967984185591897008
+      instruction_trans_90: -7411568901002163391
+      instruction_trans_91: -1475977696755880049
+      instruction_trans_92: 8713742179049225380
+      instruction_trans_93: 7147511688390584459
+      instruction_trans_94: -8819890406161477970
+      instruction_trans_95: -7983769069387514969
+      instruction_trans_96: -6754670180823471613
+      instruction_trans_97: -7089126429696501310
+      instruction_trans_98: 2433952012433007465
+      instruction_trans_99: -8846922660809647333
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
