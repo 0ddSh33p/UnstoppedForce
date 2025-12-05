@@ -160,7 +160,7 @@ public class PlayerController : MonoBehaviour
             if (dashTime == 0f)
             {
                 rb.AddForceX(dashSpeed * lastDir);
-                PlaySFX(dashClip, 3f);
+                PlaySFX(dashClip, 9f);
             }
 
             //increment the cooldown timer or reset it if it is out of time

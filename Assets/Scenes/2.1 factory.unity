@@ -902,7 +902,7 @@ PrefabInstance:
     - target: {fileID: 4978392811827577194, guid: de26bdb78313e1045a97e6d6340a39a7, type: 3}
       propertyPath: dashClip
       value: 
-      objectReference: {fileID: 8300000, guid: b62873ec7c9f901449121056f1f53af0, type: 3}
+      objectReference: {fileID: 8300000, guid: 1aaefaa85506bbd4fa0cc5b4db533218, type: 3}
     - target: {fileID: 4978392811827577194, guid: de26bdb78313e1045a97e6d6340a39a7, type: 3}
       propertyPath: sfxSource
       value: 
@@ -910,15 +910,23 @@ PrefabInstance:
     - target: {fileID: 4978392811827577194, guid: de26bdb78313e1045a97e6d6340a39a7, type: 3}
       propertyPath: footstepClip
       value: 
-      objectReference: {fileID: 8300000, guid: eba7df08c97c72a4ea45f087ba2d69f2, type: 3}
+      objectReference: {fileID: 8300000, guid: eca74e296ad440540bb00998de5cf873, type: 3}
     - target: {fileID: 4978392811827577194, guid: de26bdb78313e1045a97e6d6340a39a7, type: 3}
       propertyPath: footstepSource
       value: 
       objectReference: {fileID: 1393623040}
     - target: {fileID: 4978392811827577194, guid: de26bdb78313e1045a97e6d6340a39a7, type: 3}
+      propertyPath: momentum50Clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 0b412ac6e62250b44a681633ae603708, type: 3}
+    - target: {fileID: 4978392811827577194, guid: de26bdb78313e1045a97e6d6340a39a7, type: 3}
       propertyPath: swordSwingClip
       value: 
-      objectReference: {fileID: 8300000, guid: a21ea7f7cd1bf4440b45a3a1e94614e4, type: 3}
+      objectReference: {fileID: 8300000, guid: 0828d024c04163340a21b57ca1b9f1c9, type: 3}
+    - target: {fileID: 4978392811827577194, guid: de26bdb78313e1045a97e6d6340a39a7, type: 3}
+      propertyPath: momentum100Clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 6cd99479a6a997346a132cc924b48b4b, type: 3}
     - target: {fileID: 5255573438812478713, guid: de26bdb78313e1045a97e6d6340a39a7, type: 3}
       propertyPath: m_Name
       value: Player
