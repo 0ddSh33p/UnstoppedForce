@@ -1,14 +1,18 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
     private float health;
     public float maxHealth = 10;
     public HealthBarUI healthBarUI;
+    private Vector3 spawn;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
+
     {
+        spawn = gameObject.transform.position;
         health = maxHealth;
         healthBarUI = GameObject.Find("Health").GetComponent<HealthBarUI>();
         healthBarUI.setHealth(health, maxHealth);
@@ -22,7 +26,7 @@ public class PlayerHealth : MonoBehaviour
         if (health <= 0)
         {
             //Replace with respawn system in a future update
-            Destroy(gameObject);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
         Debug.Log(name + " " + health);
     }

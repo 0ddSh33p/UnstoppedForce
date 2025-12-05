@@ -682,10 +682,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8420570474500639588, guid: 96231ae83c7f2ff48957578293d75ef1, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 719
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -902,10 +898,6 @@ PrefabInstance:
     - target: {fileID: 3498165483029441883, guid: de26bdb78313e1045a97e6d6340a39a7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4597007772145589850, guid: de26bdb78313e1045a97e6d6340a39a7, type: 3}
-      propertyPath: maxHealth
-      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 4978392811827577194, guid: de26bdb78313e1045a97e6d6340a39a7, type: 3}
       propertyPath: dashClip

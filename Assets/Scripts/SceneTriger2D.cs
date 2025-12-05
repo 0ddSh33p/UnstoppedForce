@@ -10,9 +10,6 @@ public class SceneTrigger2D : MonoBehaviour
     {
         if (!other.CompareTag("Player")) return;
 
-        // 告诉下一关我要落在哪
-        PlayerSpawnData.nextSpawnPointName = spawnPointNameInNextScene;
-
         SceneManager.LoadScene(sceneToLoad);
     }
 }
