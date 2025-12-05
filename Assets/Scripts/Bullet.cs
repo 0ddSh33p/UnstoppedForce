@@ -4,7 +4,7 @@ public class Bullet : MonoBehaviour
 {
     public GameObject player;
     public PlayerHealth playerHealth;
-    [SerializeField] private int damage;
+    // [SerializeField] private int damage;
     [SerializeField] private LayerMask solidObjects;
     //public Vector3 velocity;
     public float speed;
@@ -33,10 +33,10 @@ public class Bullet : MonoBehaviour
     void OnCollisionEnter2D(Collision2D collision)
     {
         //Debug.Log(collision.gameObject.name + " : " + gameObject.name + " : " + Time.time);
-        if(collision.gameObject.tag == "SolidObject" || collision.gameObject.tag == "Player")
-        {
+        // if(collision.gameObject.tag == "SolidObject" || collision.gameObject.tag == "Player")
+        // {
             Destroy(gameObject);
-        }
+        // }
         //bitwise shenanigans to determine if the collision in within the collision mask
         // if ((solidObjects.value & (1 << collision.transform.gameObject.layer)) > 0)
         //     Destroy(gameObject);
