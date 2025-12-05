@@ -21,6 +21,9 @@ EditorBuildSettings:
     path: Assets/Scenes/level 1.4 way to the facturary.unity
     guid: 0adeae9c87de3074ab567059be0337cb
   - enabled: 1
+    path: Assets/Scenes/false sucess.unity
+    guid: 7782d51873bbadb4cbf4209014510ea4
+  - enabled: 1
     path: Assets/Scenes/2.1 factory.unity
     guid: c24440b7c768e4340af70d402dff30ef
   m_configObjects:
